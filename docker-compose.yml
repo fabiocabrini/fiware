@@ -1,0 +1,37 @@
+# Note that mongo container is started before Orion, as Orion needs it
+# as dependency and reserve the order has been found problematic in some
+# low resource hosts
+mongo:
+  image: mongo:4.4
+  command: --nojournal
+  hostname: mongo
+  container_name: fiware-mongo
+  ports:
+    - "27017:27017"
+  volumes:
+      - "db-data:/data/db"
+
+orion:
+  image: fiware/orion:latest
+  hostname: orion
+  container_name: fiware-orion
+  links:
+    - mongo
+  ports:
+    - "1026:1026"
+  command: -dbhost mongo
+
+fiware-sth-comet:
+  image: telefonicaiot/fiware-sth-comet
+  hostname: sth-comet
+  container_name: fiware-sth-comet
+  links:
+    - mongo
+  ports:
+    - "8666:8666"
+  environment:
+    - STH_HOST=0.0.0.0
+    - STH_PORT=8666
+    - DB_PREFIX=sth_
+    - DB_URI=mongo:27017
+    - LOGOPS_LEVEL=DEBUG
