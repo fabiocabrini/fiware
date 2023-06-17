@@ -53,8 +53,8 @@ iot-agent:
   image: fiware/iotagent-ul:latest # iotagent
   hostname: iot-agent
   container_name: fiware-iot-agent
-  links:
-    - mongodb
+  depends_on:
+    - mongo
     - mosquitto
   expose:
     - "4041"
