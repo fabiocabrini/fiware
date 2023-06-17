@@ -35,8 +35,19 @@ fiware-sth-comet:
     - DB_PREFIX=sth_
     - DB_URI=mongo:27017
     - LOGOPS_LEVEL=DEBUG
-   # IoT-Agent is configured for the UltraLight Protocol
   
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    hostname: mosquitto
+    container_name: fiware-mosquitto
+    expose:
+      - "1883"
+      - "9001"
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
   iot-agent:
     image: fiware/iotagent-ul:latest # iotagent
     hostname: iot-agent
@@ -67,15 +78,4 @@ fiware-sth-comet:
     healthcheck:
       test: curl --fail -s http://0.0.0.0:4041/iot/about || exit 1 
       
-  mosquitto:
-    image: eclipse-mosquitto:latest
-    hostname: mosquitto
-    container_name: fiware-mosquitto
-    expose:
-      - "1883"
-      - "9001"
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    volumes:
-      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+  
