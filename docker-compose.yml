@@ -61,7 +61,7 @@ iot-agent:
   ports:
     - "4041:4041"
   environment:
-    - IOTA_CB_HOST=STH_HOST
+    - IOTA_CB_HOST=10.2.17.52
     - IOTA_CB_PORT=1026 # port the context broker listens on to update context
     - IOTA_NORTH_PORT=4041
     - IOTA_REGISTRY_TYPE=mongo #Whether to hold IoT device info in memory or in a database
@@ -75,7 +75,7 @@ iot-agent:
     - IOTA_MQTT_HOST=mosquitto # The host name of the MQTT Broker
     - IOTA_MQTT_PORT=1883 # The port the MQTT Broker is listening on to receive topics
 #   - IOTA_DEFAULT_RESOURCE=
-    - IOTA_PROVIDER_URL=http://0.0.0.0:4041 
+    - IOTA_PROVIDER_URL=http://10.2.17.52:4041 
   
       
   
