@@ -75,6 +75,3 @@ iot-agent:
     - IOTA_PROVIDER_URL=http://iot-agent:4041
     - IOTA_MQTT_HOST=mosquitto
     - IOTA_MQTT_PORT=1883 
-  
-      
-  
