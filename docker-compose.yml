@@ -1,6 +1,7 @@
 # Note that mongo container is started before Orion, as Orion needs it
 # as dependency and reserve the order has been found problematic in some
 # low resource hosts
+
 mongo-db:
   image: mongo:4.4
   command: --nojournal
