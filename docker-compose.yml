@@ -48,6 +48,7 @@ fiware-sth-comet:
       - "9001:9001"
     volumes:
       - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
+  
   iot-agent:
     image: fiware/iotagent-ul:latest # iotagent
     hostname: iot-agent
@@ -75,7 +76,6 @@ fiware-sth-comet:
       - IOTA_MQTT_PORT=1883 # The port the MQTT Broker is listening on to receive topics
   #   - IOTA_DEFAULT_RESOURCE=
       - IOTA_PROVIDER_URL=http://0.0.0.0:4041 
-    healthcheck:
-      test: curl --fail -s http://0.0.0.0:4041/iot/about || exit 1 
+  
       
   
