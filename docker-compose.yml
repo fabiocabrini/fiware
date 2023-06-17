@@ -63,9 +63,9 @@ fiware-sth-comet:
       - IOTA_MQTT_HOST=mosquitto # The host name of the MQTT Broker
       - IOTA_MQTT_PORT=1883 # The port the MQTT Broker is listening on to receive topics
   #   - IOTA_DEFAULT_RESOURCE=
-      - IOTA_PROVIDER_URL=http://<HELIX_IOT_IP>:4041 
+      - IOTA_PROVIDER_URL=http://0.0.0.0:4041 
     healthcheck:
-      test: curl --fail -s http://<HELIX_IOT_IP>:4041/iot/about || exit 1 
+      test: curl --fail -s http://0.0.0.0:4041/iot/about || exit 1 
       
   mosquitto:
     image: eclipse-mosquitto:latest
