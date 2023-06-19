@@ -93,9 +93,12 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de 
 
 <a href="https://smartdatamodels.org/">Smart Data Models</a> - Modelos de Dados
    
-<a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a> 
+<a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a>  - Manual Avançado do Orion Context Broker
    
 <a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relacionamento entre Entidades
+
+<a href="http://telefonicaid.github.io/fiware-orion/archive/api/v2/">FIWARE - NGSI v2 Subscriptions - Postman Collections</a> - Subscrições Condicionadas
+
 
 
 ## Collection do Postman (demonstração!)
