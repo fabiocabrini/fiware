@@ -4,7 +4,7 @@ services:
 
 # Data bases
    mongo-db:
-     image: mongo:latest
+     image: mongo:4.4
      command: --nojournal
      hostname: mongo-db
      container_name: fiware-mongo
