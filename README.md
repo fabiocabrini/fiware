@@ -55,7 +55,7 @@ Docker e Docker-Compose
 
 Click <a href=https://docs.docker.com/get-docker/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose!
 
-## Requisitos de Hardware Mínimos
+## Requisitos de Hardware 
 
 Núcleos de processamento - 1vCPU
 
