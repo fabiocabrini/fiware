@@ -11,7 +11,7 @@ Docker e Docker-Compose
 
 1GRAM
 
-20GBHD (Vai depender da quantidade de entidades e dados históricos)
+20GB HD e/ou SSD (Vai depender da quantidade de entidades e dados históricos que serão armazenados no banco de dados.)
 
 ## Liberação de Portas
 1026  - API Orion
