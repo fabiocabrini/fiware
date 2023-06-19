@@ -8,28 +8,16 @@ Esta ferramenta foi desenvolvida para simplificar o processo de instanciação d
 
 ### FIWARE
 
-O FIWARE é uma plataforma de código aberto para o desenvolvimento de soluções de IoT (Internet of Things)
-e Smart Environments. Ele oferece uma arquitetura padronizada e um conjunto de componentes que permitem a 
-integração e interconexão de dados contextuais de diferentes fontes. O FIWARE facilita o desenvolvimento
-de aplicativos e serviços inovadores, promovendo a interoperabilidade, a reutilização de dados e a 
-escalabilidade. 
+O FIWARE é uma plataforma de IoT e Cidades Inteligentes que adota uma arquitetura modular e padronizada para capturar, armazenar, consultar e compartilhar dados contextuais em tempo real. Ele oferece recursos avançados e é implementado usando tecnologias e padrões abertos. 
 
 ### NGSI (Next Generation Service Interface)
 
-    O NGSI é um padrão de interface para a troca de informações contextuais na plataforma FIWARE.
-    
-    Ele define um modelo de dados consistente e uma API padronizada para criar, atualizar, recuperar e excluir dados contextuais.
-    
-    O NGSI utiliza o formato JSON (JavaScript Object Notation) para representar as informações contextuais e facilita a integração entre diferentes componentes da plataforma.
+O NGSI é um padrão de interface que define um modelo de dados consistente e uma API padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
 
 ### CEF (Connecting Europe Facility)
 
-    A Connecting Europe Facility (CEF) é uma iniciativa da União Europeia para promover a interoperabilidade e a conectividade digital na Europa.
-    
-    O CEF apoia projetos que desenvolvem infraestruturas e serviços digitais em áreas como transporte, energia, governo eletrônico, saúde e muito mais.
-    
-    No contexto do FIWARE, o CEF financiou o desenvolvimento de componentes-chave da plataforma, promovendo sua adoção e expansão em toda a Europa.
-    
+O CEF é uma iniciativa da União Europeia que oferece financiamento para o desenvolvimento de infraestruturas e serviços digitais, visando promover a interoperabilidade e a conectividade digital em toda a Europa. Ele apoia projetos que eliminam barreiras técnicas e promovem a interconexão e a interoperabilidade de sistemas e serviços digitais, impulsionando a transformação digital e a integração europeia.
+
 ## Principais GEs (Generic Enablers)
 
 ### Orion Context Broker: 
