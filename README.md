@@ -8,12 +8,12 @@ Esta ferramenta foi desenvolvida para simplificar o processo de instanciação d
 
 ### FIWARE
 
-    O FIWARE é uma plataforma de código aberto para o desenvolvimento de soluções de IoT (Internet of Things)
-    e Smart Environments. Ele oferece uma arquitetura padronizada e um conjunto de componentes que permitem a 
-    integração e interconexão de dados contextuais de diferentes fontes. O FIWARE facilita o desenvolvimento
-    de aplicativos e serviços inovadores, promovendo a interoperabilidade, a reutilização de dados e a 
-    escalabilidade.
-    
+O FIWARE é uma plataforma de código aberto para o desenvolvimento de soluções de IoT (Internet of Things)
+e Smart Environments. Ele oferece uma arquitetura padronizada e um conjunto de componentes que permitem a 
+integração e interconexão de dados contextuais de diferentes fontes. O FIWARE facilita o desenvolvimento
+de aplicativos e serviços inovadores, promovendo a interoperabilidade, a reutilização de dados e a 
+escalabilidade. 
+
 ### NGSI (Next Generation Service Interface)
 
     O NGSI é um padrão de interface para a troca de informações contextuais na plataforma FIWARE.
