@@ -81,7 +81,7 @@ docker-compose up -d
 
 Núcleos de Processamento - **1vCPU**
 
-Memória RAM - **1GBytes** 
+Memória RAM - **1GB** 
 
 Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de entidades e dados históricos armazenados no banco de dados)
 
