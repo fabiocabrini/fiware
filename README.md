@@ -1,19 +1,23 @@
 # Fiware - GEs (Generic Enablers) para IoT (Internet of Things) e persistência de dados
 
 ## Introdução
+
 Esta ferramenta foi criada para simplificar o processo de instanciação do Orion Context Broker, STH-Comet, MongoDB, IoT-Agent e Eclipse-Mosquitto.
 
 ## Requisitos
+
 Docker e Docker-Compose
 
-## Requisitos de Hardware
-1vCPU
+## Requisitos de Hardware Mínimos
 
-1GRAM
+Núcleos de processamento - 1vCPU
 
-20GB HD e/ou SSD (Vai depender da quantidade de entidades e dados históricos que serão armazenados no banco de dados.)
+Memória RAM - 1GBytes 
 
-## Liberação de Portas
+Armazenamento secundário - 20GB HD e/ou SSD (Vai depender da quantidade de entidades e dados históricos que serão armazenados no banco de dados.)
+
+## Liberação de Portas no Firewall
+
 1026  - API Orion
 
 1883  - Eclipse-Mosquito 
@@ -25,4 +29,5 @@ Docker e Docker-Compose
 27017 - MongoDB
 
 ## Collection do Postman (demonstração!)
+
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
