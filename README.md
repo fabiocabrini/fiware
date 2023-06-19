@@ -1,6 +1,8 @@
 # FIWARE Deployment Tool
 
-Ferramenta para a instanciação dos principais GEs (Generic Enablers) destinados a IoT (Internet of Things) e persistência de dados. O FIWARE Deployment Tool é destinado exclusivamente para atividades de pesquisa e desenvolvimento de PoC (Proof of Concepts). **Não sendo recomendado para aplicações de produção!**
+Ferramenta para a instanciação dos principais GEs (Generic Enablers) destinados a IoT (Internet of Things) e persistência de dados. O FIWARE Deployment Tool é destinado exclusivamente para atividades de pesquisa e desenvolvimento de PoC (Proof of Concepts).
+
+**Não é recomendado para aplicações de produção!**
 
 ## Introdução
 
