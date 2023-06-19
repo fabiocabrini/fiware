@@ -1,6 +1,6 @@
 # FIWARE deployment Tool
 
-Ferramenta para instanciação dos GEs (Generic Enablers) para IoT (Internet of Things) e persistência de dados
+Ferramenta para instanciação dos GEs (Generic Enablers) destinados a IoT (Internet of Things) e persistência de dados.
 
 ## Introdução
 
