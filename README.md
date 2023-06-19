@@ -10,19 +10,29 @@ Esta ferramenta foi desenvolvida para simplificar o processo de instanciação d
 
 O FIWARE é uma plataforma de IoT e Cidades Inteligentes que adota uma arquitetura modular e padronizada para capturar, armazenar, consultar e compartilhar dados contextuais em tempo real. Ele oferece recursos avançados e é implementado usando tecnologias e padrões abertos. 
 
+Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE!
+
+
 ### NGSI (Next Generation Service Interface)
 
 O NGSI é um padrão de interface que define um modelo de dados consistente e uma API padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
 
+Click <a href="https://fiware-tutorials.readthedocs.io/en/stable/getting-started/index.html"> aqui </a> para acessar a documentação do NGSI-V2.
+
 ### CEF (Connecting Europe Facility)
 
 O CEF é uma iniciativa da União Europeia que oferece financiamento para o desenvolvimento de infraestruturas e serviços digitais, visando promover a interoperabilidade e a conectividade digital em toda a Europa. Ele apoia projetos que eliminam barreiras técnicas e promovem a interconexão e a interoperabilidade de sistemas e serviços digitais, impulsionando a transformação digital e a integração europeia.
+
+Click <a href="https://ec.europa.eu/inea/en/connecting-europe-facility"> aqui </a> para acessar o site do CEF.
 
 ## Principais GEs (Generic Enablers)
 
 ### Orion Context Broker 
 
 O Orion Context Broker é um componente da plataforma FIWARE que gerencia dados contextuais em tempo real. Ele armazena informações sobre objetos e entidades, permitindo que os desenvolvedores capturem, consultem e compartilhem esses dados. O Context Broker utiliza um modelo de publicação/assinatura para fornecer atualizações em tempo real sobre mudanças no contexto das entidades. Ele oferece uma API RESTful para interação e suporta recursos como geolocalização, histórico de dados e notificações baseadas em condições específicas. Em resumo, o Orion Context Broker facilita o desenvolvimento de soluções inteligentes para IoT e Cidades Inteligentes, permitindo o gerenciamento de dados contextuais em tempo real.
+
+Click <a href="https://fiware-orion.readthedocs.io/en/master/index.html"> aqui </a> para acessar a documentação do Orion Context Broker.
+
 
 
 ### STH-Comet
