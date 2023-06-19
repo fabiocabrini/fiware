@@ -91,7 +91,7 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de 
 
 ## Recursos Avançados
 
-<a href="https://smartdatamodels.org/">Smart Data Models</a> - Modelos de Dados
+<a href="https://smartdatamodels.org/">FIWARE - Smart Data Models</a> - Modelos de Dados
    
 <a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a>  - Manual Avançado do Orion Context Broker
    
