@@ -87,15 +87,15 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de 
 
 ## Liberação de Portas no Firewall
 
-1026  - **API Orion Context Broker**
+1026/TCP  - **API Orion Context Broker**
 
-1883  - **Eclipse-Mosquito MQTT** 
+1883/TCP  - **Eclipse-Mosquito MQTT** 
 
-4041  - **API IoT-Agent MQTT**
+4041/TCP  - **API IoT-Agent MQTT**
 
-8666  - **API STH-Comet**
+8666/TCP  - **API STH-Comet**
 
-27017 - **MongoDB**
+27017/TCP - **MongoDB**
 
 ## Recursos Avançados
 
