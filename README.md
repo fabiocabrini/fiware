@@ -6,6 +6,12 @@ Ferramenta para instanciação dos GEs (Generic Enablers) destinados a IoT (Inte
 
 Esta ferramenta foi criada para simplificar o processo de instanciação do Orion Context Broker, STH-Comet, MongoDB, IoT-Agent e Eclipse-Mosquitto.
 
+## Inside 
+
+<img src="">
+
+<br>
+
 ## Requisitos
 
 Docker e Docker-Compose
