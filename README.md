@@ -8,6 +8,8 @@ Esta ferramenta foi criada para simplificar o processo de instanciação do Orio
 
 Docker e Docker-Compose
 
+Click <a href=https://docs.docker.com/get-docker/> aqui </a> para acessar as instruções para instalar o Docker e o Docker-Compose!
+
 ## Requisitos de Hardware Mínimos
 
 Núcleos de processamento - 1vCPU
