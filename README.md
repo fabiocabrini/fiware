@@ -83,7 +83,7 @@ Núcleos de Processamento - **1vCPU**
 
 Memória RAM - **1GB** 
 
-Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de entidades e dados históricos armazenados no banco de dados)
+Armazenamento Secundário - **20GB HD e/ou SSD** (Depende da quantidade de entidades e dados históricos armazenados no banco de dados).
 
 ## Liberação de Portas no Firewall
 
