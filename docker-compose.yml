@@ -1,120 +1,87 @@
-# WARNING: Do not deploy this tutorial configuration directly to a production environment
-#
-# The tutorial docker-compose files have not been written for production deployment and will not 
-# scale. A proper architecture has been sacrificed to keep the narrative focused on the learning 
-# goals, they are just used to deploy everything onto a single Docker machine. All FIWARE components 
-# are running at full debug and extra ports have been exposed to allow for direct calls to services. 
-# They also contain various obvious security flaws - passwords in plain text, no load balancing,
-# no use of HTTPS and so on. 
-# 
-# This is all to avoid the need of multiple machines, generating certificates, encrypting secrets
-# and so on, purely so that a single docker-compose file can be read as an example to build on, 
-# not use directly. 
-# 
-# When deploying to a production environment, please refer to the Helm Repository
-# for FIWARE Components in order to scale up to a proper architecture:
-# 
-# see: https://github.com/FIWARE/helm-charts/
-#
-version: "3.8"
-services:
-  # Orion is the context broker
-  orion:
-    labels:
-      org.fiware: 'tutorial'
-    image: fiware/orion:latest
-    hostname: orion
-    container_name: fiware-orion
-    depends_on:
-      - mongo-db
-    networks:
-      - default
-    ports:
-      - "${ORION_PORT}:${ORION_PORT}" # localhost:1026
-    command: -dbhost mongo-db -logLevel DEBUG -noCache
-    healthcheck:
-      test: curl --fail -s http://orion:${ORION_PORT}/version || exit 1
-      interval: 5s
+version: '3'
 
-# Databases
-  mongo-db:
-    image: mongo:4.4
-    hostname: mongo-db
-    container_name: db-mongo
-    expose:
-      - "${MONGO_DB_PORT}"
-    ports:
-      - "${MONGO_DB_PORT}:${MONGO_DB_PORT}" # localhost:27017 # localhost:27017
-    networks:
-      - default
-    volumes:
-      - mongo-db:/data
-    healthcheck:
-      test: |
-        host=`hostname --ip-address || echo '127.0.0.1'`; 
-        mongo --quiet $host/test --eval 'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)' && echo 0 || echo 1
-      interval: 5s
-    
-networks:
-  default:
-    ipam:
-      config:
-        - subnet: 172.18.1.0/24
+services:
+
+# Data bases
+   mongo-db:
+     image: mongo:4.4
+     command: --nojournal
+     hostname: mongo-db
+     container_name: fiware-mongo
+     ports:
+       - "27017:27017"
+     volumes:
+       - db-data:/data/db
+
+# Orion is the context broker
+   orion:
+     image: fiware/orion:latest
+     hostname: orion
+     container_name: fiware-orion
+     links:
+       - mongo-db
+     ports:
+       - "1026:1026"
+     command: -dbhost mongo-db
+
+# Persistent Data
+   fiware-sth-comet:
+     image: telefonicaiot/fiware-sth-comet
+     hostname: sth-comet
+     container_name: fiware-sth-comet
+     depends_on:
+       - mongo-db
+     ports:
+       - "8666:8666"
+     environment:
+       - STH_HOST=0.0.0.0
+       - STH_PORT=8666
+       - DB_PREFIX=sth_
+       - DB_URI=mongo-db:27017
+       - LOGOPS_LEVEL=DEBUG
+
+# MQTT Broker
+   mosquitto:
+     image: eclipse-mosquitto:latest
+     hostname: mosquitto
+     container_name: fiware-mosquitto
+     expose:
+       - "1883"
+       - "9001"
+     ports:
+       - "1883:1883"
+       - "9001:9001"
+     volumes:
+       - mosquitto:/mosquitto/config
+
+# MQTT Broker to NGSI
+   iot-agent:
+     image: fiware/iotagent-ul:latest
+     hostname: iot-agent
+     container_name: fiware-iot-agent
+     depends_on:
+       - mongo-db
+       - mosquitto
+     expose:
+       - "4041"
+     ports:
+       - "4041:4041"
+     environment:
+       - IOTA_CB_HOST=192.168.86.32
+       - IOTA_CB_PORT=1026
+       - IOTA_NORTH_PORT=4041
+       - IOTA_REGISTRY_TYPE=mongodb
+       - IOTA_LOG_LEVEL=DEBUG
+       - IOTA_TIMESTAMP=true
+       - IOTA_CB_NGSI_VERSION=v2
+       - IOTA_AUTOCAST=true
+       - IOTA_MONGO_HOST=mongo-db
+       - IOTA_MONGO_PORT=27017
+       - IOTA_MONGO_DB=iotagentul
+       - IOTA_PROVIDER_URL=http://192.168.86.32:4041
+       - IOTA_MQTT_HOST=mosquitto
+       - IOTA_MQTT_PORT=1883
 
 volumes:
-  mongo-db: ~
-
-  fiware-sth-comet:
-    image: telefonicaiot/fiware-sth-comet
-    hostname: sth-comet
-    container_name: fiware-sth-comet
-    links:
-      - mongo-db
-    ports:
-      - "8666:8666"
-    environment:
-      - STH_HOST=0.0.0.0
-      - STH_PORT=8666
-      - DB_PREFIX=sth_
-      - DB_URI=mongo-db:27017
-      - LOGOPS_LEVEL=DEBUG
-  
-  mosquitto:
-    image: eclipse-mosquitto:latest
-    hostname: mosquitto
-    container_name: fiware-mosquitto
-    expose:
-      - "1883"
-      - "9001"
-    ports:
-      - "1883:1883"
-      - "9001:9001"
-    volumes:
-      - "mosquitto:/mosquitto/config"
-  
-  iot-agent:
-    image: fiware/iotagent-ul:latest # iotagent
-    hostname: iot-agent
-    container_name: fiware-iot-agent
-    links:
-      - mongo-db
-      - mosquitto
-    expose:
-      - "4041"
-    ports:
-      - "4041:4041"
-    environment:
-      - IOTA_CB_HOST=orion
-      - IOTA_CB_PORT=1026
-      - IOTA_NORTH_PORT=4041
-      - IOTA_REGISTRY_TYPE=mongodb
-      - IOTA_LOG_LEVEL=DEBUG
-      - IOTA_TIMESTAMP=true
-      - IOTA_CB_NGSI_VERSION=v2
-      - IOTA_AUTOCAST=true
-      - IOTA_MONGO_HOST=mongo-db
-      - IOTA_MONGO_PORT=27017
-      - IOTA_MONGO_DB=iotagentul
-      - IOTA_PROVIDER_URL=http://iot-agent:4041
-      - IOTA_MQTT_HOST=mosquitto
-      - IOTA_MQTT_PORT=1883 
+   db-data:
+   mosquitto:
