@@ -69,6 +69,12 @@ Docker e Docker-Compose
 
 Click <a href=https://docs.docker.com/get-docker/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose!
 
+## Instalação 
+
+git clone https://github.com/fabiocabrini/fiware
+cd fiware
+docker-compose up -d
+
 ## Requisitos de Hardware 
 
 Núcleos de Processamento - **1vCPU**
@@ -98,8 +104,6 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de 
 <a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relacionamento entre Entidades
 
 <a href="http://telefonicaid.github.io/fiware-orion/archive/api/v2/">FIWARE - NGSI v2 Subscriptions - Postman Collections</a> - Subscrições Condicionadas
-
-
 
 ## Collection do Postman (demonstração!)
 
