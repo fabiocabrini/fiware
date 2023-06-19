@@ -8,15 +8,21 @@ Docker e Docker-Compose
 
 ## Requisitos de Hardware
 1vCPU
+
 1GRAM
+
 20GBHD (Vai depender da quantidade de entidades e dados históricos)
 
 ## Liberação de Portas
 1026  - API Orion
+
 1883  - Eclipse-Mosquito 
+
 4041  - API IoT-Agent
+
 8666  - API STH-Comet
+
 27017 - MongoDB
 
 ## Collection do Postman (demonstração!)
-Click <a href="https://github.com/fabio.cabrini/fiware/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
