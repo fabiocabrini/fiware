@@ -67,7 +67,7 @@ services:
      ports:
        - "4041:4041"
      environment:
-       - IOTA_CB_HOST=192.168.86.32
+       - IOTA_CB_HOST=orion
        - IOTA_CB_PORT=1026
        - IOTA_NORTH_PORT=4041
        - IOTA_REGISTRY_TYPE=mongodb
@@ -78,7 +78,7 @@ services:
        - IOTA_MONGO_HOST=mongo-db
        - IOTA_MONGO_PORT=27017
        - IOTA_MONGO_DB=iotagentul
-       - IOTA_PROVIDER_URL=http://192.168.86.32:4041
+       - IOTA_PROVIDER_URL=http://iot-agent:4041
        - IOTA_MQTT_HOST=mosquitto
        - IOTA_MQTT_PORT=1883
 
