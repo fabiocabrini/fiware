@@ -1,7 +1,7 @@
 # FIWARE Deployment Tool
 <br>
 
-<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/fiware_evangelist_program.png">
 
 <br>
 Ferramenta para instanciação dos GEs (Generic Enablers) destinados a IoT (Internet of Things) e persistência de dados.
