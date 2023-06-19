@@ -18,4 +18,5 @@ Docker e Docker-Compose
 8666  - API STH-Comet
 27017 - MongoDB
 
-
+## Collection do Postman (demonstração!)
+Click <a href="https://github.com/fabio.cabrini/fiware/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
