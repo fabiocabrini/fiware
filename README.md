@@ -13,7 +13,7 @@ Esta ferramenta foi criada para simplificar o processo de instanciação do Orio
 
 <br>
 
-## Requisitos
+## Requisitos de Software
 
 Docker e Docker-Compose
 
