@@ -35,3 +35,9 @@ Armazenamento secundário - 20GB HD e/ou SSD (Vai depender da quantidade de enti
 ## Collection do Postman (demonstração!)
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
+
+## Reference
+
+Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
+
+#### © Fábio Henrique Cabrini 2023, All rights reserved.
