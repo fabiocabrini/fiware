@@ -65,11 +65,11 @@ Click <a href=https://docs.docker.com/get-docker/> aqui </a> para ver as instru�
 
 ## Requisitos de Hardware 
 
-Núcleos de processamento - 1vCPU
+Núcleos de Processamento - 1vCPU
 
 Memória RAM - 1GBytes 
 
-Armazenamento secundário - 20GB HD e/ou SSD (Vai depender da quantidade de entidades e dados históricos que serão armazenados no banco de dados.)
+Armazenamento Secundário - 20GB HD e/ou SSD (Vai depender da quantidade de entidades e dados históricos armazenados no banco de dados)
 
 ## Liberação de Portas no Firewall
 
