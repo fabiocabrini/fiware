@@ -20,7 +20,7 @@ O CEF é uma iniciativa da União Europeia que oferece financiamento para o dese
 
 ## Principais GEs (Generic Enablers)
 
-### Orion Context Broker: 
+### Orion Context Broker 
 
 O Orion Context Broker é um componente da plataforma FIWARE que gerencia dados contextuais em tempo real. Ele armazena informações sobre objetos e entidades, permitindo que os desenvolvedores capturem, consultem e compartilhem esses dados. O Context Broker utiliza um modelo de publicação/assinatura para fornecer atualizações em tempo real sobre mudanças no contexto das entidades. Ele oferece uma API RESTful para interação e suporta recursos como geolocalização, histórico de dados e notificações baseadas em condições específicas. Em resumo, o Orion Context Broker facilita o desenvolvimento de soluções inteligentes para IoT e Cidades Inteligentes, permitindo o gerenciamento de dados contextuais em tempo real.
 
