@@ -1,4 +1,6 @@
-# Fiware - GEs (Generic Enablers) para IoT (Internet of Things) e persistência de dados
+# FIWARE deployment Tool
+
+Ferramenta para instanciação dos GEs (Generic Enablers) para IoT (Internet of Things) e persistência de dados
 
 ## Introdução
 
