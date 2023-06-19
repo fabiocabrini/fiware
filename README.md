@@ -91,11 +91,12 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Vai depender da quantidade de 
 
 ## Recursos Avançados
 
-<a href="https://smartdatamodels.org/">Smart Data Models</a> - New
+<a href="https://smartdatamodels.org/">Smart Data Models</a> - Modelos de Dados
    
 <a href="https://www.postman.com/fiware/workspace/fiware-foundation-ev-s-public-workspace/folder/513743-f75eabf1-1a66-45ab-b4c5-47d3dc0696f9?ctx=documentation">FIWARE - Postman Collections</a>
    
-<a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - New
+<a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relacionamento entre Entidades
+
 
 ## Collection do Postman (demonstração!)
 
