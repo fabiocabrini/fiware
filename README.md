@@ -72,7 +72,9 @@ Click <a href=https://docs.docker.com/get-docker/> aqui </a> para ver as instru�
 ## Instalação 
 
 git clone https://github.com/fabiocabrini/fiware
+
 cd fiware
+
 docker-compose up -d
 
 ## Requisitos de Hardware 
