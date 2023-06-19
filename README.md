@@ -1,4 +1,4 @@
-# FIWARE deployment Tool
+# FIWARE Deployment Tool
 
 Ferramenta para instanciação dos GEs (Generic Enablers) destinados a IoT (Internet of Things) e persistência de dados.
 
