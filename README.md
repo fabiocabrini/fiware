@@ -7,6 +7,7 @@ Ferramenta para instanciação dos GEs (Generic Enablers) destinados a IoT (Inte
 Esta ferramenta foi criada para simplificar o processo de instanciação do Orion Context Broker, STH-Comet, MongoDB, IoT-Agent e Eclipse-Mosquitto.
 
 ## Arquitetura de Referência 
+<br>
 
 <img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
 
