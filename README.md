@@ -6,7 +6,7 @@ Ferramenta para a instanciação dos principais GEs (Generic Enablers) destinado
 
 ## Introdução
 
-Esta ferramenta foi desenvolvida para simplificar o processo de instanciação dos principais GEs disponibilizados pela FIWARE Foundation.  O FIWARE Deployment Tool permite através do uso do Docker Compose que é uma ferramenta que facilita a definição e o gerenciamento de aplicativos multi-container no Docker. Sua principal função é permitir a definição de um ambiente de aplicativo completo, que pode consistir em vários serviços, cada um executado em seu próprio contêiner Docker. 
+Esta ferramenta foi desenvolvida para simplificar o processo de instanciação dos principais GEs disponibilizados pela FIWARE Foundation.  O FIWARE Deployment Tool permite através do uso do Docker Compose que é uma ferramenta que facilita a definição e o gerenciamento de aplicativos multi-container no Docker. Sua principal função é permitir a definição de um ambiente de aplicativo completo, que pode consistir em vários serviços, cada um executado em seu próprio conteiner Docker. 
 
 ### FIWARE
 
