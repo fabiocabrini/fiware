@@ -83,7 +83,7 @@ Click <a href="https://www.fiware.org/about-us/smart-industry/"> aqui </a> para 
 
 Docker e Docker-Compose
 
-Click <a href=https://docs.docker.com/engine/install/ubuntu/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose.
+Click <a href=https://docs.docker.com/engine/install/ubuntu/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose no Ubuntu Server LTS.
 
 ## Instalação 
 
