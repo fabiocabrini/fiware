@@ -10,7 +10,7 @@ Esta ferramenta foi desenvolvida para simplificar o processo de instanciação d
 
 ### FIWARE
 
-O FIWARE é uma plataforma de IoT e Ambientes Inteligentes que adota uma arquitetura modular e padronizada para capturar, armazenar, consultar e compartilhar dados contextuais em tempo de execução. Oferece recursos avançados e é implementado usando tecnologias e padrões abertos. 
+O FIWARE é uma plataforma de IoT e Ambientes Inteligentes que adota uma arquitetura modular e padronizada para capturar, armazenar, consultar e compartilhar dados contextuais em tempo de execução. Oferece recursos avançados e sua implementação utiliza tecnologias e padrões abertos. 
 
 Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE.
 
