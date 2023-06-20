@@ -21,6 +21,7 @@ Os Smart Data Models (Modelos de Dados Inteligentes) e MIMs (Minimal Interoperab
 A missão da Open & Agile Smart Cities (OASC) é unir cidades e comunidades ao redor do mundo para criar um mercado global de soluções, serviços e dados com base nas necessidades dessas cidades e comunidades. Para isso, a OASC promove os Mecanismos de Interoperabilidade Mínima (MIMs), que são capacidades práticas baseadas em especificações técnicas abertas. Os MIMs permitem que cidades e comunidades repliquem e dimensionem soluções globalmente. Eles são desenvolvidos pelo Conselho de Tecnologia da OASC e são governados pelo Conselho das Cidades e pelo Conselho Diretor. Os MIMs fornecem a base técnica para aquisição e implantação de plataformas de dados urbanos e soluções abrangentes em cidades e comunidades ao redor do mundo.
 
 Click <a href="https://github.com/smart-data-models"> aqui </a> para acessar o repositório com os Smart Data Models usados pelo FIWARE!
+
 Click <a href="https://oascities.org/minimal-interoperability-mechanisms/"> aqui </a> para acessar o repositório dos MIMs definidos pela OASC!
 
 
