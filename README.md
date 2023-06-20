@@ -107,6 +107,8 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Depende da quantidade de entid
 
 <a href="http://telefonicaid.github.io/fiware-orion/archive/api/v2/">FIWARE - NGSI v2 Subscriptions - Postman Collections</a> - Subscrições Condicionadas
 
+<a href="https://fiware-orion.readthedocs.io/en/3.10.1/orion-api.html#geospatial-properties-of-entities">FIWARE - NGSI v2 API Orion 3.10.1 </a> - Novo
+
 ## Collection do Postman (demonstração!)
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman!
