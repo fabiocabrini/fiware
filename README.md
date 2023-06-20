@@ -14,6 +14,15 @@ O FIWARE é uma plataforma de IoT e Ambientes Inteligentes que adota uma arquite
 
 Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE!
 
+## Smart Data Models e MIMs (Minimal Interoperability Mechanisms)
+
+Os Smart Data Models (Modelos de Dados Inteligentes) e MIMs (Minimal Interoperability Mechanisms) são modelos padronizados que facilitam a troca de informações entre sistemas e aplicações no contexto do FIWARE. Eles definem uma estrutura comum e atributos para representar conceitos específicos de domínio, promovendo a interoperabilidade e reutilização de dados. Esses modelos são desenvolvidos pela comunidade do FIWARE e visam facilitar a integração de diferentes fontes de dados, impulsionando a inovação e o desenvolvimento de soluções inteligentes. 
+
+A missão da Open & Agile Smart Cities (OASC) é unir cidades e comunidades ao redor do mundo para criar um mercado global de soluções, serviços e dados com base nas necessidades dessas cidades e comunidades. Para isso, a OASC promove os Mecanismos de Interoperabilidade Mínima (MIMs), que são capacidades práticas baseadas em especificações técnicas abertas. Os MIMs permitem que cidades e comunidades repliquem e dimensionem soluções globalmente. Eles são desenvolvidos pelo Conselho de Tecnologia da OASC e são governados pelo Conselho das Cidades e pelo Conselho Diretor. Os MIMs fornecem a base técnica para aquisição e implantação de plataformas de dados urbanos e soluções abrangentes em cidades e comunidades ao redor do mundo.
+
+Click <a href="https://github.com/smart-data-models"> aqui </a> para acessar o repositório com os Smart Data Models usados pelo FIWARE!
+Click <a href="https://oascities.org/minimal-interoperability-mechanisms/"> aqui </a> para acessar o repositório dos MIMs definidos pela OASC!
+
 
 ### NGSI (Next Generation Service Interface)
 
