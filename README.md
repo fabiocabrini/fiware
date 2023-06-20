@@ -33,7 +33,7 @@ Click <a href="https://ec.europa.eu/inea/en/connecting-europe-facility"> aqui </
 
 O Orion Context Broker é um componente da plataforma FIWARE que gerencia dados contextuais em tempo de execução. Ele armazena informações sobre objetos e entidades, permitindo que os desenvolvedores capturem, consultem e compartilhem esses dados. O Context Broker utiliza um modelo de publicação/assinatura para fornecer atualizações em tempo real sobre mudanças no contexto das entidades. Ele oferece uma API RESTful para interação e suporta recursos como geolocalização, histórico de dados e notificações baseadas em condições específicas.
 
-Click <a href="https://fiware-orion.readthedocs.io/en/master/index.html"> aqui </a> para acessar a documentação do Orion Context Broker.
+Click <a href="https://fiware-orion.readthedocs.io/en/3.10.1/index.html"> aqui </a> para acessar a documentação do Orion Context Broker.
 
 ### STH-Comet
 
