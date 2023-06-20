@@ -125,11 +125,11 @@ Armazenamento Secundário - **20GB HD e/ou SSD** (Depende da quantidade de entid
 
 <a href="https://fiware-orion.readthedocs.io/en/3.10.1/orion-api.html#geospatial-properties-of-entities">FIWARE - NGSI v2 API Orion 3.10.1 </a> - Novo
 
-## Collection do Postman (demonstração!)
+## Collection do Postman (material para demonstração)
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
-## Reference
+## Referências
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
 
