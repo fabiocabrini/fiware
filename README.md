@@ -74,7 +74,7 @@ Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação 
 
 **Camada de Aplicação** é responsável pelo front-end da aplicação e ferramentas que irão consumir e interagir com os dispositivos de IoT e com consumidores/provedores de contexto, bem como, acomodar algoritmos de machine learning, inteligência artificial, analytics, dashboards, app mobile e muito mais.
 
-** Camada de back-end** abriga o Orion Context Broker, STH-Comet e o IoT Agent MQTT, também é possível encontrar o banco de dados NoSQL MongoDB responsável pelo armazenamento das entidades, registros, subscrições e dados históricos (time series), além do Eclipse-Mosquitto, um popular broker MQTT.  Nesta camada é possível incluir os demais GEs oferecidos pela FIWARE Foundation e ferramentas de terceiros.
+**Camada de back-end** abriga o Orion Context Broker, STH-Comet e o IoT Agent MQTT, também é possível encontrar o banco de dados NoSQL MongoDB responsável pelo armazenamento das entidades, registros, subscrições e dados históricos (time series), além do Eclipse-Mosquitto, um popular broker MQTT.  Nesta camada é possível incluir os demais GEs oferecidos pela FIWARE Foundation e ferramentas de terceiros.
 
 Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a lista dos demais componentes oferecidos pela FIWARE Foundation.
 
