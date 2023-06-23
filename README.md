@@ -73,7 +73,7 @@ Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação 
 ## Arquitetura de Referência 
 <br>
 
-<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_arquitetura.png">
 
 <br>
 
