@@ -70,7 +70,7 @@ O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar 
 
 Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
 
-## Arquitetura de Referência 
+## Arquitetura Básica de IoT
 <br>
 <p align="center">
 <img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
