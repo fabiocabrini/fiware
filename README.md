@@ -73,9 +73,10 @@ Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação 
 ## Arquitetura de Referência 
 <br>
 <p align="center">
-<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_arquitetura_vf.png">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
 </p>
 <br>
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWAREDeploy.drawio"> aqui </a> para acessar o arquivo da arquitetura no formato drawio.
 
 ## Requisitos de Software
 
