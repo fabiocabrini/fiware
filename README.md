@@ -2,15 +2,13 @@
 
 Ferramenta para a instanciação dos principais GEs (Generic Enablers) destinados a operação como back-end para aplicações de IoT (Internet of Things) com persistência de dados. O FIWARE Deployment Tool é destinado exclusivamente para atividades de pesquisa e desenvolvimento de PoCs (Proof of Concepts) que implementam soluções baseadas no processamento de informações de contexto padronizadas.
 
-**Não é recomendado para aplicações de produção!**
-
 ## Introdução
 
 Esta ferramenta foi desenvolvida para simplificar o processo de instanciação dos principais GEs disponibilizados pela FIWARE Foundation.  O FIWARE Deployment Tool permite através do uso do Docker Compose que é uma ferramenta que facilita a definição e o gerenciamento de aplicativos multi-container no Docker. Sua principal função é permitir a definição de um ambiente de aplicativo completo, que pode consistir em vários serviços, cada um executado em seu próprio conteiner Docker. 
 
 ### FIWARE
 
-O FIWARE é uma plataforma de IoT e Ambientes Inteligentes que adota uma arquitetura modular e padronizada para capturar, armazenar, consultar e compartilhar dados contextuais em tempo de execução. Oferece recursos avançados e sua implementação utiliza tecnologias e padrões abertos. 
+O FIWARE é uma plataforma aberta que pode ser utilizada para suportar aplicações de IoT e Ambientes Inteligentes, apresenta uma arquitetura modular e padronizada para coletar, processar, armazenar e compartilhar informações de contexto em tempo de execução. Oferece recursos avançados e sua implementação utiliza tecnologias e padrões abertos. 
 
 Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE.
 
