@@ -80,7 +80,7 @@ Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a li
 
 **Camada IoT (Internet of Things)** é responsável pelos dispositivos de IoT que estabelecem comunicação com a aplicação através dos protocolos MQTT ou HTTP/NGSIv2.
 
-**Observação** A ferramenta não inclui recursos de segurança, pois é destinada a pesquisa e PoCs! Para que sua aplicação atenda a requisitos de segurança e acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP e protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTT.
+**Observação** A ferramenta não inclui recursos de segurança, pois é destinada a pesquisa e PoCs! Para que a sua aplicação atenda a requisitos de segurança é necessário acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP e protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTT. Para alta disponibilidade é recomendado o de orquestradores como Docker Swarm ou Kubernetes.
 
 
 <br>
