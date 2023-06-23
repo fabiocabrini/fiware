@@ -71,6 +71,18 @@ O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar 
 Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
 
 ## Arquitetura Básica de IoT
+
+**Camada de Aplicação** é responsável pelo front-end da aplicação e ferramentas que irão consumir e interagir com os dispositivos de IoT e com consumidores/provedores de contexto, bem como, acomodar algoritmos de machine learning, inteligência artificial, analytics, dashboards, app mobile e muito mais.
+
+** Camada de back-end** abriga o Orion Context Broker, STH-Comet e o IoT Agent MQTT, também é possível encontrar o banco de dados NoSQL MongoDB responsável pelo armazenamento das entidades, registros, subscrições e dados históricos (time series), além do Eclipse-Mosquitto, um popular broker MQTT.  Nesta camada é possível incluir os demais GEs oferecidos pela FIWARE Foundation e ferramentas de terceiros.
+
+Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a lista dos demais componentes oferecidos pela FIWARE Foundation.
+
+**Camada IoT (Internet of Things)** é responsável pelos dispositivos de IoT que estabelecem comunicação com a aplicação através dos protocolos MQTT ou HTTP/NGSIv2.
+
+**Observação** A ferramenta não inclui recursos de segurança, pois é destinada a pesquisa e PoCs! Para que sua aplicação atenda a requisitos de segurança e acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP e protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTT.
+
+
 <br>
 <p align="center">
 <img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy.png">
