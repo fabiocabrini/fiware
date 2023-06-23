@@ -77,8 +77,6 @@ Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação 
 </p>
 <br>
 
-Click <a href="https://www.fiware.org/about-us/smart-industry/"> aqui </a> para acessar a documentação de referência do FIWARE Smart Industry.
-
 ## Requisitos de Software
 
 Docker e Docker-Compose
