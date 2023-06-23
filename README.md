@@ -70,7 +70,7 @@ O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar 
 
 Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
 
-## Arquitetura Básica de IoT
+## Arquitetura Básica para Projetos de IoT
 
 **Camada de Aplicação** é responsável pelo front-end da aplicação e ferramentas que irão consumir e interagir com os dispositivos de IoT e com os consumidores/provedores de contexto, bem como, acomodar algoritmos de machine learning, inteligência artificial, analytics, dashboards, app mobile e muito mais.
 
