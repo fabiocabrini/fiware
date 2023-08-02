@@ -11,9 +11,10 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
 
 #### Código (IDE Arduino)
 
-```//Programa: NodeMCU e MQTT - Controle e Monitoramento IoT
+```
+//Programa: NodeMCU e MQTT - Controle e Monitoramento IoT
 //Autor: Fábio Henrique Cabrini
-//Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Helix saber
+//Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Fiware saber
 //se o led está ligado ou desligado.
  
 #include <ESP8266WiFi.h> // Importa a Biblioteca ESP8266WiFi
@@ -21,18 +22,18 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
  
 //defines:
 //defines de id mqtt e tópicos para publicação e subscribe
-#define TOPICO_SUBSCRIBE "/iot/lamp001/cmd"     //tópico MQTT de escuta
-#define TOPICO_PUBLISH   "/iot/lamp001/attrs"    //tópico MQTT de envio de informações para Broker
-#define TOPICO_PUBLISH_2   "/iot/lamp001/attrs/l"    //tópico MQTT de envio de informações para Broker
+#define TOPICO_SUBSCRIBE "/iot/lamp001/cmd"        //tópico MQTT de escuta
+#define TOPICO_PUBLISH_1   "/iot/lamp001/attrs"    //tópico MQTT de envio de informações para Broker
+#define TOPICO_PUBLISH_2   "/iot/lamp001/attrs/l"  //tópico MQTT de envio de informações para Broker
                                                    //IMPORTANTE: recomendamos fortemente alterar os nomes
                                                    //            desses tópicos. Caso contrário, há grandes
                                                    //            chances de você controlar e monitorar o NodeMCU
                                                    //            de outra pessoa.
-#define ID_MQTT  "helix"     //id mqtt (para identificação de sessão)
-                               //IMPORTANTE: este deve ser único no broker (ou seja, 
-                               //            se um client MQTT tentar entrar com o mesmo 
-                               //            id de outro já conectado ao broker, o broker 
-                               //            irá fechar a conexão de um deles).
+#define ID_MQTT  "fiware_001"     //id mqtt (para identificação de sessão)
+                                  //IMPORTANTE: este deve ser único no broker (ou seja, 
+                                  //            se um client MQTT tentar entrar com o mesmo 
+                                  //            id de outro já conectado ao broker, o broker 
+                                  //            irá fechar a conexão de um deles).
                                 
  
 //defines - mapeamento de pinos do NodeMCU
@@ -83,7 +84,7 @@ void setup()
     initWiFi();
     initMQTT();
     delay(5000);
-    MQTT.publish(TOPICO_PUBLISH, "s|off");
+    MQTT.publish(TOPICO_PUBLISH_1, "s|off");
 }
   
 //Função: inicializa comunicação serial com baudrate 115200 (para fins de monitorar no terminal serial 
@@ -222,10 +223,10 @@ void VerificaConexoesWiFIEMQTT(void)
 void EnviaEstadoOutputMQTT(void)
 {
     if (EstadoSaida == '0')
-      MQTT.publish(TOPICO_PUBLISH, "s|on");
+      MQTT.publish(TOPICO_PUBLISH_1, "s|on");
  
     if (EstadoSaida == '1')
-      MQTT.publish(TOPICO_PUBLISH, "s|off");
+      MQTT.publish(TOPICO_PUBLISH_1, "s|off");
  
     Serial.println("- Estado do LED onboard enviado ao broker!");
     delay(1000);
