@@ -22,18 +22,18 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
  
 //defines:
 //defines de id mqtt e tópicos para publicação e subscribe
-#define TOPICO_SUBSCRIBE "/iot/lamp001/cmd"        //tópico MQTT de escuta
-#define TOPICO_PUBLISH_1 "/iot/lamp001/attrs"      //tópico MQTT de envio de informações para Broker
-#define TOPICO_PUBLISH_2 "/iot/lamp001/attrs/l"    //tópico MQTT de envio de informações para Broker
-                                                   //IMPORTANTE: recomendamos fortemente alterar os nomes
-                                                   //            desses tópicos. Caso contrário, há grandes
-                                                   //            chances de você controlar e monitorar o NodeMCU
-                                                   //            de outra pessoa.
-#define ID_MQTT  "fiware_001"     //id mqtt (para identificação de sessão)
-                                  //IMPORTANTE: este deve ser único no broker (ou seja, 
-                                  //            se um client MQTT tentar entrar com o mesmo 
-                                  //            id de outro já conectado ao broker, o broker 
-                                  //            irá fechar a conexão de um deles).
+#define TOPICO_SUBSCRIBE "/TEF/lamp001/cmd"     //tópico MQTT de escuta
+#define TOPICO_PUBLISH   "/TEF/lamp001/attrs/"  //tópico MQTT de envio de informações para Broker
+#define TOPICO_PUBLISH2  "/TEF/lamp001/attrs/l" //tópico MQTT de envio de informações para Broker
+                                                //IMPORTANTE: recomendamos fortemente alterar os nomes
+                                                //            desses tópicos. Caso contrário, há grandes
+                                                //            chances de você controlar e monitorar o NodeMCU
+                                                //            de outra pessoa.
+#define ID_MQTT  "fiware"     //id mqtt (para identificação de sessão)
+                              //IMPORTANTE: este deve ser único no broker (ou seja, 
+                              //            se um client MQTT tentar entrar com o mesmo 
+                              //            id de outro já conectado ao broker, o broker 
+                              //            irá fechar a conexão de um deles).
                                 
  
 //defines - mapeamento de pinos do NodeMCU
@@ -51,18 +51,18 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
  
  
 // WIFI
-const char* SSID = "SSID"; // SSID / nome da rede WI-FI que deseja se conectar
-const char* PASSWORD = "PASSWORD"; // Senha da rede WI-FI que deseja se conectar
+const char* SSID = "ssid"; // SSID / nome da rede WI-FI que deseja se conectar
+const char* PASSWORD = "password"; // Senha da rede WI-FI que deseja se conectar
   
 // MQTT
-const char* BROKER_MQTT = "IP"; //URL do broker MQTT que se deseja utilizar
+const char* BROKER_MQTT = "ip_host_fiware"; //URL do broker MQTT que se deseja utilizar
 int BROKER_PORT = 1883; // Porta do Broker MQTT
  
 
 //Variáveis e objetos globais
 WiFiClient espClient; // Cria o objeto espClient
 PubSubClient MQTT(espClient); // Instancia o Cliente MQTT passando o objeto espClient
-char EstadoSaida = '1';  //variável que armazena o estado atual da saída
+char EstadoSaida = '0';  //variável que armazena o estado atual da saída
   
 //Prototypes
 void initSerial();
@@ -83,8 +83,6 @@ void setup()
     initSerial();
     initWiFi();
     initMQTT();
-    delay(5000);
-    MQTT.publish(TOPICO_PUBLISH_1, "s|off");
 }
   
 //Função: inicializa comunicação serial com baudrate 115200 (para fins de monitorar no terminal serial 
@@ -144,6 +142,7 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length)
     {
         digitalWrite(D4, LOW);
         EstadoSaida = '0';
+        Serial.println(EstadoSaida);
     }
  
     //verifica se deve colocar nivel alto de tensão na saída D0:
@@ -151,6 +150,7 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length)
     {
         digitalWrite(D4, HIGH);
         EstadoSaida = '1';
+        Serial.println(EstadoSaida);
     }
      
 }
@@ -223,10 +223,10 @@ void VerificaConexoesWiFIEMQTT(void)
 void EnviaEstadoOutputMQTT(void)
 {
     if (EstadoSaida == '0')
-      MQTT.publish(TOPICO_PUBLISH_1, "s|on");
+      MQTT.publish(TOPICO_PUBLISH, "s|on");
  
     if (EstadoSaida == '1')
-      MQTT.publish(TOPICO_PUBLISH_1, "s|off");
+      MQTT.publish(TOPICO_PUBLISH, "s|off");
  
     Serial.println("- Estado do LED onboard enviado ao broker!");
     delay(1000);
@@ -258,7 +258,7 @@ void loop()
     int sensorValue = analogRead(A0);   // Ler o pino Analógico A0 onde está o LDR
     float voltage = sensorValue * (3.3 / 1024.0);   // Converter a leitura analógica (que vai de 0 - 1023) para uma voltagem (0 - 3.3V), quanto de acordo com a intensidade de luz no LDR a voltagem diminui.
     Serial.println(voltage);
-    MQTT.publish(TOPICO_PUBLISH_2,dtostrf(voltage, 4, 2, msgBuffer));
+    MQTT.publish(TOPICO_PUBLISH2,dtostrf(voltage, 4, 2, msgBuffer));
     //keep-alive da comunicação com broker MQTT
     MQTT.loop();
 }
