@@ -138,6 +138,10 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
+## PoC - Smart Lamp
+
+<a href="mqtt_nodemcu.md">NodeMCU enviando valores de luminosidade via MQTT para o FIWARE </a>
+
 ## Referências
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
