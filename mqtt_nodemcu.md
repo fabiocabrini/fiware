@@ -1,15 +1,15 @@
-## NodeMCU with LED + LDR Sensor
+## NodeMCU LED + LDR Sensor
 #### About
 
-The code below automatically creates the sensor and actuator in the Helix Sandbox and sends the luminosity from LDR and LED state to Helix using the MQTT messages. Moreover, this code uses the force update to guarantee the storage persistence on the database. 
-You can use the Arduino IDE to create the code for your NodeMCU.
+O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
 
 
-#### Electrical Diagram
+
+#### Diagrama Elétrico
 
 ![](node_mcu_ldr.png)
 
-#### Code
+#### Código (IDE Arduino)
 
 ```//Programa: NodeMCU e MQTT - Controle e Monitoramento IoT
 //Autor: Fábio Henrique Cabrini
