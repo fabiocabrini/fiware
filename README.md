@@ -64,7 +64,7 @@ Click <a href="https://www.mongodb.com/pt-br/products/compass"> aqui </a> para i
 
 ### Eclipse-Mosquitto
 
-O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE.
+O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE.Os dados são armazenados no tópico TEF (Telemetria e Monitoramento de Equipamentos).
 
 Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
 
