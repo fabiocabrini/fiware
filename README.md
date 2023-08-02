@@ -94,13 +94,19 @@ Docker e Docker-Compose
 
 Click <a href=https://docs.docker.com/engine/install/ubuntu/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose no Ubuntu Server LTS.
 
-## Instalação 
+## Instalação e Inicialização
 
 git clone https://github.com/fabiocabrini/fiware
 
 cd fiware
 
-docker-compose up -d
+docker compose up -d
+
+## Desligar
+
+docker compose down
+
+**Observação:** O FIWARE Descomplicado utiliza volumes, portanto, os seus dados não serão perdidos ao desligá-lo!
 
 ## Requisitos de Hardware 
 
