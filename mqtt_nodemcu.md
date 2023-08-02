@@ -23,8 +23,8 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
 //defines:
 //defines de id mqtt e tópicos para publicação e subscribe
 #define TOPICO_SUBSCRIBE "/iot/lamp001/cmd"        //tópico MQTT de escuta
-#define TOPICO_PUBLISH_1   "/iot/lamp001/attrs"    //tópico MQTT de envio de informações para Broker
-#define TOPICO_PUBLISH_2   "/iot/lamp001/attrs/l"  //tópico MQTT de envio de informações para Broker
+#define TOPICO_PUBLISH_1 "/iot/lamp001/attrs"      //tópico MQTT de envio de informações para Broker
+#define TOPICO_PUBLISH_2 "/iot/lamp001/attrs/l"    //tópico MQTT de envio de informações para Broker
                                                    //IMPORTANTE: recomendamos fortemente alterar os nomes
                                                    //            desses tópicos. Caso contrário, há grandes
                                                    //            chances de você controlar e monitorar o NodeMCU
