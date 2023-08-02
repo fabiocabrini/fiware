@@ -37,11 +37,11 @@
  
  
 // WIFI
-const char* SSID = "Google Mesh"; // SSID / nome da rede WI-FI que deseja se conectar
-const char* PASSWORD = "K@6r1n1trovao"; // Senha da rede WI-FI que deseja se conectar
+const char* SSID = "ssid"; // SSID / nome da rede WI-FI que deseja se conectar
+const char* PASSWORD = "password"; // Senha da rede WI-FI que deseja se conectar
   
 // MQTT
-const char* BROKER_MQTT = "192.168.86.159"; //URL do broker MQTT que se deseja utilizar
+const char* BROKER_MQTT = "ip_host_fiware"; //URL do broker MQTT que se deseja utilizar
 int BROKER_PORT = 1883; // Porta do Broker MQTT
  
 
