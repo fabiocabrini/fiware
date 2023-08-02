@@ -52,7 +52,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n \"services\": [\n   {\n     \"apikey\":      \"iot\",\n     \"cbroker\":     \"http://{{url}}:1026\",\n     \"entity_type\": \"Thing\",\n     \"resource\":    \"\"\n   }\n ]\n}"
+							"raw": "{\n \"services\": [\n   {\n     \"apikey\":      \"TEF\",\n     \"cbroker\":     \"http://{{url}}:1026\",\n     \"entity_type\": \"Thing\",\n     \"resource\":    \"\"\n   }\n ]\n}"
 						},
 						"url": {
 							"raw": "http://{{url}}:4041/iot/services",
