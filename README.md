@@ -57,6 +57,8 @@ O STH-Comet é um componente da plataforma FIWARE que lida com o armazenamento h
 
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
+Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet/"> aqui </a> para acessar a documentação sobre queries do STH-Comet.
+
 ### IoT-Agent MQTT
 
 O IoT Agent MQTT é um componente da plataforma FIWARE que facilita a integração de dispositivos IoT baseados em MQTT (Message Queuing Telemetry Transport). Ele permite a comunicação bidirecional entre dispositivos MQTT e o Orion Context Broker, gerenciando a transformação de mensagens MQTT em atualizações de contexto compreensíveis. Ele também oferece recursos de descoberta automática, normalização de dados e autenticação de dispositivos MQTT.
