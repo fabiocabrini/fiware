@@ -7,7 +7,7 @@
 #include <PubSubClient.h> // Importa a Biblioteca PubSubClient
  
 //defines:
-//defines de id mqtt e tópicos para publicação e subscribe
+//defines de id mqtt e tópicos para publicação e subscribe denominado TEF(Telemetria e Monitoramento de Equipamentos)
 #define TOPICO_SUBSCRIBE "/TEF/lamp001/cmd"     //tópico MQTT de escuta
 #define TOPICO_PUBLISH   "/TEF/lamp001/attrs/"  //tópico MQTT de envio de informações para Broker
 #define TOPICO_PUBLISH2  "/TEF/lamp001/attrs/l" //tópico MQTT de envio de informações para Broker
