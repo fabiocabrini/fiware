@@ -47,7 +47,7 @@ Click <a href="https://fiware-orion.readthedocs.io/en/3.10.1/index.html"> aqui <
 
 O STH-Comet é um componente da plataforma FIWARE que lida com o armazenamento histórico de dados contextuais em larga escala. Ele trabalha em conjunto com o Orion Context Broker para capturar, armazenar e consultar dados históricos. O STH-Comet oferece recursos avançados, como armazenamento eficiente em série temporal, consultas de agregação e consultas de séries temporais. Ele fornece uma API RESTful para interação e permite que os desenvolvedores acessem e analisem dados históricos de forma eficiente. Em resumo, o STH-Comet facilita o armazenamento e consulta de dados contextuais históricos na plataforma FIWARE.
 
-Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/getting-started/index.html"> aqui </a> para acessar a documentação do STH-Comet.
+Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
 ### IoT-Agent MQTT
 
