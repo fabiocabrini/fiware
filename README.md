@@ -12,6 +12,8 @@ O FIWARE é uma plataforma aberta que pode ser utilizada para suportar aplicaç�
 
 Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE.
 
+Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/"> aqui </a> para acessar o tour guide do FIWARE.
+
 ## Smart Data Models e MIMs (Minimal Interoperability Mechanisms)
 
 Os Smart Data Models (Modelos de Dados Inteligentes) e MIMs (Minimal Interoperability Mechanisms) são modelos padronizados que facilitam a troca de informações entre sistemas e aplicações no contexto do FIWARE. Eles definem uma estrutura comum e atributos para representar conceitos específicos de domínio, promovendo a interoperabilidade e reutilização de dados. Esses modelos são desenvolvidos pela comunidade do FIWARE e visam facilitar a integração de diferentes fontes de dados, impulsionando a inovação e o desenvolvimento de soluções inteligentes. 
