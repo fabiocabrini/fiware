@@ -755,7 +755,7 @@
 			"name": "Orion Context Broker",
 			"item": [
 				{
-					"name": "1.Version",
+					"name": "1.Health Check",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1016,7 +1016,7 @@
 			"name": "STH-Comet",
 			"item": [
 				{
-					"name": "1. sth version",
+					"name": "1. Health Check",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1035,7 +1035,7 @@
 					"response": []
 				},
 				{
-					"name": "2. sth subscribe temperature",
+					"name": "2. Subscribe Temperature",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1075,7 +1075,7 @@
 					"response": []
 				},
 				{
-					"name": "3. sth subscribe humidity",
+					"name": "3. Subscribe Humidity",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1115,7 +1115,7 @@
 					"response": []
 				},
 				{
-					"name": "4. sth subscribe luminosity",
+					"name": "4. Subscribe Luminosity",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -1155,7 +1155,7 @@
 					"response": []
 				},
 				{
-					"name": "5. sth request temperature",
+					"name": "5. Request Temperature",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1203,7 +1203,7 @@
 					"response": []
 				},
 				{
-					"name": "6. sth request humidity",
+					"name": "6. Request Humidity",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1251,7 +1251,7 @@
 					"response": []
 				},
 				{
-					"name": "7. sth request luminosity",
+					"name": "7. Request Luminosity",
 					"request": {
 						"method": "GET",
 						"header": [
