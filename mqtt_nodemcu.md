@@ -1,5 +1,5 @@
 ## NodeMCU LED + LDR Sensor
-#### About
+#### Sobre
 
 O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
 
