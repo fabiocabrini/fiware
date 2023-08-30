@@ -12,44 +12,35 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
 #### Código (IDE Arduino)
 
 ```
-//Programa: NodeMCU e MQTT - Controle e Monitoramento IoT
 //Autor: Fábio Henrique Cabrini
-//Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Fiware saber
+//Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Helix saber
 //se o led está ligado ou desligado.
- 
-#include <ESP8266WiFi.h> // Importa a Biblioteca ESP8266WiFi
+//Revisões:
+//Rev1: 26-08-2023 Código portado para o ESP32 e para realizar a leitura de luminosidade e publicar o valor em um tópico aprorpiado do broker 
+//Autor Rev1: Lucas Demetrius Augusto 
+//Rev2: 28-08-2023 Ajustes para o funcionamento no FIWARE Descomplicado
+//Autor Rev2: Fábio Henrique Cabrini
+
+#include <WiFi.h>
 #include <PubSubClient.h> // Importa a Biblioteca PubSubClient
  
 //defines:
 //defines de id mqtt e tópicos para publicação e subscribe denominado TEF(Telemetria e Monitoramento de Equipamentos)
-#define TOPICO_SUBSCRIBE "/TEF/lamp001/cmd"     //tópico MQTT de escuta
-#define TOPICO_PUBLISH   "/TEF/lamp001/attrs/"  //tópico MQTT de envio de informações para Broker
-#define TOPICO_PUBLISH2  "/TEF/lamp001/attrs/l" //tópico MQTT de envio de informações para Broker
-                                                //IMPORTANTE: recomendamos fortemente alterar os nomes
-                                                //            desses tópicos. Caso contrário, há grandes
-                                                //            chances de você controlar e monitorar o NodeMCU
-                                                //            de outra pessoa.
-#define ID_MQTT  "fiware"     //id mqtt (para identificação de sessão)
-                              //IMPORTANTE: este deve ser único no broker (ou seja, 
-                              //            se um client MQTT tentar entrar com o mesmo 
-                              //            id de outro já conectado ao broker, o broker 
-                              //            irá fechar a conexão de um deles).
+#define TOPICO_SUBSCRIBE    "/TEF/lamp001/cmd"        //tópico MQTT de escuta
+#define TOPICO_PUBLISH      "/TEF/lamp001/attrs"      //tópico MQTT de envio de informações para Broker
+#define TOPICO_PUBLISH_2    "/TEF/lamp001/attrs/l"    //tópico MQTT de envio de informações para Broker
+                                                      //IMPORTANTE: recomendamos fortemente alterar os nomes
+                                                      //            desses tópicos. Caso contrário, há grandes
+                                                      //            chances de você controlar e monitorar o ESP32
+                                                      //            de outra pessoa.
+#define ID_MQTT  "mosquitto_n"   //id mqtt (para identificação de sessão)
+                                 //IMPORTANTE: este deve ser único no broker (ou seja, 
+                                 //            se um client MQTT tentar entrar com o mesmo 
+                                 //            id de outro já conectado ao broker, o broker 
+                                 //            irá fechar a conexão de um deles).
+                                 // o valor "n" precisa ser único!
                                 
- 
-//defines - mapeamento de pinos do NodeMCU
-#define D0    16
-#define D1    5
-#define D2    4
-#define D3    0
-#define D4    2
-#define D5    14
-#define D6    12
-#define D7    13
-#define D8    15
-#define D9    3
-#define D10   1
- 
- 
+
 // WIFI
 const char* SSID = "ssid"; // SSID / nome da rede WI-FI que deseja se conectar
 const char* PASSWORD = "password"; // Senha da rede WI-FI que deseja se conectar
@@ -58,6 +49,7 @@ const char* PASSWORD = "password"; // Senha da rede WI-FI que deseja se conectar
 const char* BROKER_MQTT = "ip_host_fiware"; //URL do broker MQTT que se deseja utilizar
 int BROKER_PORT = 1883; // Porta do Broker MQTT
  
+int D4 = 2;
 
 //Variáveis e objetos globais
 WiFiClient espClient; // Cria o objeto espClient
@@ -83,6 +75,8 @@ void setup()
     initSerial();
     initWiFi();
     initMQTT();
+    delay(5000);
+    MQTT.publish(TOPICO_PUBLISH, "s|on");
 }
   
 //Função: inicializa comunicação serial com baudrate 115200 (para fins de monitorar no terminal serial 
@@ -126,31 +120,32 @@ void initMQTT()
 void mqtt_callback(char* topic, byte* payload, unsigned int length) 
 {
     String msg;
- 
+     
     //obtem a string do payload recebido
     for(int i = 0; i < length; i++) 
     {
        char c = (char)payload[i];
        msg += c;
     }
-   
+    
+    Serial.print("- Mensagem recebida: ");
+    Serial.println(msg);
+    
     //toma ação dependendo da string recebida:
     //verifica se deve colocar nivel alto de tensão na saída D0:
     //IMPORTANTE: o Led já contido na placa é acionado com lógica invertida (ou seja,
     //enviar HIGH para o output faz o Led apagar / enviar LOW faz o Led acender)
     if (msg.equals("lamp001@on|"))
     {
-        digitalWrite(D4, LOW);
-        EstadoSaida = '0';
-        Serial.println(EstadoSaida);
+        digitalWrite(D4, HIGH);
+        EstadoSaida = '1';
     }
  
     //verifica se deve colocar nivel alto de tensão na saída D0:
     if (msg.equals("lamp001@off|"))
     {
-        digitalWrite(D4, HIGH);
-        EstadoSaida = '1';
-        Serial.println(EstadoSaida);
+        digitalWrite(D4, LOW);
+        EstadoSaida = '0';
     }
      
 }
@@ -222,12 +217,16 @@ void VerificaConexoesWiFIEMQTT(void)
 //Retorno: nenhum
 void EnviaEstadoOutputMQTT(void)
 {
-    if (EstadoSaida == '0')
-      MQTT.publish(TOPICO_PUBLISH, "s|on");
- 
     if (EstadoSaida == '1')
+    {
+      MQTT.publish(TOPICO_PUBLISH, "s|on");
+      Serial.println("- Led Ligado");
+    }
+    if (EstadoSaida == '0')
+    {
       MQTT.publish(TOPICO_PUBLISH, "s|off");
- 
+      Serial.println("- Led Desligado");
+    }
     Serial.println("- Estado do LED onboard enviado ao broker!");
     delay(1000);
 }
@@ -240,14 +239,25 @@ void InitOutput(void)
     //IMPORTANTE: o Led já contido na placa é acionado com lógica invertida (ou seja,
     //enviar HIGH para o output faz o Led apagar / enviar LOW faz o Led acender)
     pinMode(D4, OUTPUT);
-    digitalWrite(D4, HIGH);          
+    digitalWrite(D4, HIGH);
+    
+    boolean toggle = false;
+
+    for(int i = 0; i <= 10; i++)
+    {
+        toggle = !toggle;
+        digitalWrite(D4,toggle);
+        delay(200);           
+    }
 }
  
  
 //programa principal
 void loop() 
 {   
-    char msgBuffer[1];
+    const int potPin = 34;
+    
+    char msgBuffer[5];
     //garante funcionamento das conexões WiFi e ao broker MQTT
     VerificaConexoesWiFIEMQTT();
  
@@ -255,12 +265,15 @@ void loop()
     EnviaEstadoOutputMQTT();
 
     //luminosidade
-    int sensorValue = analogRead(A0);   // Ler o pino Analógico A0 onde está o LDR, lembrando que o divisor de tensão é Vin = Vout (R2/(R1 + R2))
-    float voltage = sensorValue * (3.3 / 1024.0);   // Converter a leitura analógica (que vai de 0 - 1023) para uma voltagem (0 - 3.3V), quanto de acordo com a intensidade de luz no LDR a voltagem diminui.
+    int sensorValue = analogRead(potPin);   // Ler o pino Analógico onde está o LDR, lembrando que o divisor de tensão é Vin = Vout (R2/(R1 + R2))
+    float voltage = sensorValue * (3.3 / 4096.0);   // Converter a leitura analógica (que vai de 0 - 1023) para uma voltagem (0 - 3.3V), quanto de acordo com a intensidade de luz no LDR a voltagem diminui.
     Serial.println(voltage);
     float luminosity = map(voltage, 0, 3.3, 0, 100); // Normalizar o valor da luminosidade entre 0% e 100%
     Serial.println(luminosity);
-    MQTT.publish(TOPICO_PUBLISH_2,dtostrf(luminosity, 4, 2, msgBuffer));
+    dtostrf(luminosity, 4, 2, msgBuffer);
+    msgBuffer[4] = '%';
+    MQTT.publish(TOPICO_PUBLISH_2,msgBuffer);
+    
     //keep-alive da comunicação com broker MQTT
     MQTT.loop();
 }
