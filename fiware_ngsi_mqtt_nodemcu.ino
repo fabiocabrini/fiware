@@ -15,13 +15,13 @@
                                                 //            desses tópicos. Caso contrário, há grandes
                                                 //            chances de você controlar e monitorar o NodeMCU
                                                 //            de outra pessoa.
-#define ID_MQTT  "fiware_n"   //id mqtt (para identificação de sessão)
-                              //IMPORTANTE: este deve ser único no broker (ou seja, 
-                              //            se um client MQTT tentar entrar com o mesmo 
-                              //            id de outro já conectado ao broker, o broker 
-                              //            irá fechar a conexão de um deles).
-                                
- 
+#define ID_MQTT  "fiware_n"  //id mqtt (para identificação de sessão)
+                             //IMPORTANTE: este deve ser único no broker (ou seja, 
+                             //            se um client MQTT tentar entrar com o mesmo 
+                             //            id de outro já conectado ao broker, o broker 
+                             //            irá fechar a conexão de um deles).
+                             // o valor "n" precisa ser único!
+                           
 //defines - mapeamento de pinos do NodeMCU
 #define D0    16
 #define D1    5
