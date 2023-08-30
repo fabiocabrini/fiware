@@ -19,7 +19,7 @@
                                                       //            desses tópicos. Caso contrário, há grandes
                                                       //            chances de você controlar e monitorar o ESP32
                                                       //            de outra pessoa.
-#define ID_MQTT  "mosquitto_n"   //id mqtt (para identificação de sessão)
+#define ID_MQTT  "fiware_n"   //id mqtt (para identificação de sessão)
                                  //IMPORTANTE: este deve ser único no broker (ou seja, 
                                  //            se um client MQTT tentar entrar com o mesmo 
                                  //            id de outro já conectado ao broker, o broker 
