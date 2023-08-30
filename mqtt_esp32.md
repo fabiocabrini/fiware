@@ -1,7 +1,7 @@
 ## ESP32 LED + LDR Sensor
 #### Sobre
 
-O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
+O código abaixo foi desenvolvido para o DOIT ESP32 DEVKIT V1 funcionar no FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
 
 
 
