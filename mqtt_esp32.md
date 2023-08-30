@@ -1,5 +1,5 @@
-## NodeMCU LED + LDR Sensor
-#### About
+## ESP32 LED + LDR Sensor
+#### Sobre
 
 O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
 
@@ -33,7 +33,7 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
                                                       //            desses tópicos. Caso contrário, há grandes
                                                       //            chances de você controlar e monitorar o ESP32
                                                       //            de outra pessoa.
-#define ID_MQTT  "mosquitto_n"   //id mqtt (para identificação de sessão)
+#define ID_MQTT  "fiware_n"      //id mqtt (para identificação de sessão)
                                  //IMPORTANTE: este deve ser único no broker (ou seja, 
                                  //            se um client MQTT tentar entrar com o mesmo 
                                  //            id de outro já conectado ao broker, o broker 
