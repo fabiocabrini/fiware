@@ -7,7 +7,7 @@ O código abaixo foi desenvolvido para o NodeMCU funcionar no FIWARE Descomplica
 
 #### Diagrama Elétrico
 
-![](esp_32_ldr.png)
+![](esp_32_ldr.PNG)
 
 #### Código (IDE Arduino)
 
