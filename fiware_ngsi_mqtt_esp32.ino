@@ -252,12 +252,10 @@ void loop()
 
     //luminosidade
     int sensorValue = analogRead(potPin);   // Ler o pino Analógico onde está o LDR, lembrando que o divisor de tensão é Vin = Vout (R2/(R1 + R2))
-    float voltage = sensorValue * (3.3 / 4096.0);   // Converter a leitura analógica (que vai de 0 - 1023) para uma voltagem (0 - 3.3V), quanto de acordo com a intensidade de luz no LDR a voltagem diminui.
-    Serial.println(voltage);
-    float luminosity = map(voltage, 0, 3.3, 0, 100); // Normalizar o valor da luminosidade entre 0% e 100%
+    Serial.println(sensorValue);
+    int luminosity = map(sensorValue, 0, 4095, 0, 100); // Normalizar o valor da luminosidade entre 0% e 100%
     Serial.println(luminosity);
     dtostrf(luminosity, 4, 2, msgBuffer);
-    msgBuffer[4] = '%';
     MQTT.publish(TOPICO_PUBLISH_2,msgBuffer);
     
     //keep-alive da comunicação com broker MQTT
