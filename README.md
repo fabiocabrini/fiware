@@ -156,7 +156,7 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_c
 
 ## PoC - Smart Lamp
 
-<a href="mqtt_esp32.md">ESP32: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" on/off via MQTT</a>
+<a href="mqtt_esp32.md">ESP32: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" os comandos on/off via MQTT</a>
 
 ## Referências
 
