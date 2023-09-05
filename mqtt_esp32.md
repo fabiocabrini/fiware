@@ -7,7 +7,7 @@ O código abaixo foi desenvolvido para o DOIT ESP32 DEVKIT V1 funcionar no FIWAR
 
 #### Diagrama Elétrico
 
-![](esp_32_ldr.PNG)
+![](esp_32_ldr.jpg)
 
 #### Código (IDE Arduino)
 
