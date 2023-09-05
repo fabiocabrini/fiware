@@ -25,11 +25,11 @@ Collection do Postman: Smart Lamp
 
 #### Operação do dispostivo:
 
-16: Envio de comandos on/off para o dispositivo: API 1026
+16: Envia comandos on/off para o dispositivo: API 1026
 
-17: Get no valor de luminosidade: API 1026
+17: Busca no Orion o valor de luminosidade enviado pelo dispositivo: API 1026
 
-18: Get do status do LED: API 1026
+18: Busca no Orion o status do LED presente no dispositivo: API 1026
 
 #### Diagrama Elétrico
 
