@@ -13,9 +13,9 @@ Collection do Postman: Smart Lamp
 
 1.2 Health Check - verifica se já existe um Fiware Service: API 4041
 
-#### Criação do Fiware Service
+#### Criação do FIWARE Service
 
-2: Criação do Fiware Service (Realizar uma única vez): API 4041
+2: Criação do FIWARE Service (Realizar uma única vez): API 4041
 
 #### Criação e registro do dispositivo
 
