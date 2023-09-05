@@ -160,7 +160,11 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_c
 
 Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, um poderoso microntrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação Wi-Fi e Bluetooth.
 
+<a href="mqtt_nodemcu.md">ESP8266 NodeMCU: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" os comandos on/off via MQTT</a>
+
 <a href="mqtt_esp32.md">ESP32: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" os comandos on/off via MQTT</a>
+
+Click <a href="https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP8266 NodeMCU.
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
 
