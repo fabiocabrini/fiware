@@ -5,6 +5,8 @@ O código abaixo foi desenvolvido para o DOIT ESP32 DEVKIT V1 funcionar no FIWAR
 
 Collection do Postman: Smart Lamp
 
+Realizar os métodos: 1, 2, 9, 15, 16, 17 e 18
+
 #### Diagrama Elétrico
 
 ![](esp_32_ldr.jpg)
