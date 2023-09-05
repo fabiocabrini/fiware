@@ -5,7 +5,23 @@ O código abaixo foi desenvolvido para o DOIT ESP32 DEVKIT V1 funcionar no FIWAR
 
 Collection do Postman: Smart Lamp
 
-Realizar os métodos: 1, 2, 9, 15, 16, 17 e 18
+Realizar os métodos:
+
+####Health Check
+1.1 Health Check: API 4041
+1.2 Health Check - verifica se já existe um Fiware Service: API 4041
+
+####Criação do Fiware Service
+2: Criação do Fiware Service (Realizar uma única vez): API 4041
+
+####Criação e registro do dispositivo
+9: Provisionamento do dispositivo: API 4041
+15: Registro do dispositivo virtual: API 1026
+
+####Operação do dispostivo:
+16: Envio de comandos on/off para o dispositivo: API 1026
+17: Get no valor de luminosidade: API 1026
+18: Get do status do LED: API 1026
 
 #### Diagrama Elétrico
 
