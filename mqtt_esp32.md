@@ -9,9 +9,9 @@ Collection do Postman: Smart Lamp
 
 #### Health Check
 
-1.1 Health Check: API 4041
+1.1 Health Check: Verifica a versão do IoT Agent MQTT: API 4041
 
-1.2 Health Check - verifica se já existe um Fiware Service: API 4041
+1.2 Health Check: Verifica se já existe um FIWARE Service cadastrado: API 4041
 
 #### Criação do FIWARE Service
 
@@ -19,9 +19,9 @@ Collection do Postman: Smart Lamp
 
 #### Criação e registro do dispositivo
 
-9: Provisionamento do dispositivo: API 4041
+9: Provisionamento do dispositivo no IoT Agent MQTT: API 4041
 
-15: Registro do dispositivo virtual: API 1026
+15: Registro do dispositivo virtual no Orion Context Broker: API 1026
 
 #### Operação do dispostivo:
 
