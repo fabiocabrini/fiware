@@ -156,7 +156,7 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_c
 
 ## PoC - Smart Lamp
 
-<a href="mqtt_nodemcu.md">NodeMCU enviando valores de luminosidade via MQTT para o FIWARE </a>
+<a href="mqtt_esp32.md">ESP 32 DEVKIT V1 publica valores de luminosidade e subscreve no tópico com comandos on/off via MQTT</a>
 
 ## Referências
 
