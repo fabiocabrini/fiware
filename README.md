@@ -117,6 +117,7 @@ docker compose up -d
 docker compose down
 
 **Observação:** O FIWARE Descomplicado utiliza volumes, portanto, os seus dados não serão perdidos ao desligá-lo!
+**Volume:** /var/lib/docker/volumes/fiware_db-data/_data
 
 ## Requisitos de Hardware 
 
