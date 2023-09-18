@@ -178,6 +178,8 @@ Click <a href="https://www.espressif.com/sites/default/files/documentation/0a-es
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
 
+Click <a href="https://github.com/fabiocabrini/fiware/files/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
+
 ## Referências
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
