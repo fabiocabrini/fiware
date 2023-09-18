@@ -55,6 +55,14 @@ O STH-Comet é um componente da plataforma FIWARE que lida com o armazenamento h
 </p>
 <br>
 
+Com o STH-Comet em conjunto com a linguagem de programação Python (Biblioteca Matplotlib) é possível gerar gráficos muito legais!
+
+<br>
+<p align="center">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.jpg">
+</p>
+<br>
+
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
 Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet/"> aqui </a> para acessar a documentação sobre queries do STH-Comet.
