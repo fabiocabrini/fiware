@@ -63,7 +63,7 @@ Com o STH-Comet em conjunto com a linguagem de programação Python (Biblioteca 
 </p>
 <br>
 
-Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-Comet.
 
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
