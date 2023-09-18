@@ -5,6 +5,7 @@ services:
 # Data bases
    mongo-db:
      image: mongo:4.4
+     restart: always
      command: --nojournal
      hostname: mongo-db
      container_name: fiware-mongo
@@ -16,6 +17,7 @@ services:
 # Orion is the context broker
    orion:
      image: fiware/orion:latest
+     restart: always
      hostname: orion
      container_name: fiware-orion
      depends_on:
@@ -27,6 +29,7 @@ services:
 # Persistent Data
    fiware-sth-comet:
      image: telefonicaiot/fiware-sth-comet
+     restart: always
      hostname: sth-comet
      container_name: fiware-sth-comet
      depends_on:
@@ -43,6 +46,7 @@ services:
 # MQTT Broker
    mosquitto:
      image: eclipse-mosquitto:latest
+     restart: always
      hostname: mosquitto
      container_name: fiware-mosquitto
      expose:
@@ -57,6 +61,7 @@ services:
 # MQTT Broker to NGSI
    iot-agent:
      image: fiware/iotagent-ul:latest
+     restart: always
      hostname: iot-agent
      container_name: fiware-iot-agent
      depends_on:
