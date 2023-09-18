@@ -178,7 +178,7 @@ Click <a href="https://www.espressif.com/sites/default/files/documentation/0a-es
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
 
-Click <a href="https://github.com/fabiocabrini/fiware/files/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
 
 ## Referências
 
