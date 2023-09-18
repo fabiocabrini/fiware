@@ -63,6 +63,8 @@ Com o STH-Comet em conjunto com a linguagem de programação Python (Biblioteca 
 </p>
 <br>
 
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
+
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
 Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet/"> aqui </a> para acessar a documentação sobre queries do STH-Comet.
@@ -177,8 +179,6 @@ Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada
 Click <a href="https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP8266 NodeMCU.
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
-
-Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> aqui </a> para acessar a código em Python que gera gráficos com o STH-comet.
 
 ## Referências
 
