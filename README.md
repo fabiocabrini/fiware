@@ -67,7 +67,7 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.py"> a
 
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
-Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet/"> aqui </a> para acessar a documentação sobre queries do STH-Comet.
+Click <a href="https://documenter.getpostman.com/view/513743/RWEgqe8Q"> aqui </a> para acessar a documentação sobre queries do STH-Comet utilizando a API v2.
 
 ### IoT-Agent MQTT
 
