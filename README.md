@@ -59,7 +59,7 @@ Com o STH-Comet em conjunto com a linguagem de programação Python (Biblioteca 
 
 <br>
 <p align="center">
-<img src="https://github.com/fabiocabrini/fiware/blob/main/sth-comet.jpg">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/sth-comet-m.jpg">
 </p>
 <br>
 
