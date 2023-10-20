@@ -174,7 +174,7 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_c
 
 ## PoC - Smart Lamp
 
-Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microntrolador de 32 bits da Espressif, equipados com tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
+Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microntrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
 
 <a href="mqtt_esp32.md">ESP32: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" os comandos on/off via protocolo MQTT</a>
 
