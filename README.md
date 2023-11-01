@@ -73,13 +73,13 @@ A API do STH-Comet pode ser consumida por programas desenvolvidos em Python que 
 </p>
 <br>
 
-## Documentação
+### Documentação
 
 Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
 
 Click <a href="https://documenter.getpostman.com/view/513743/RWEgqe8Q"> aqui </a> para acessar a documentação sobre queries do STH-Comet utilizando a API v2.
 
-## Exemplos de utilização (Google Colab)
+### Exemplos de utilização (Google Colab)
 
 Click <a href="https://colab.research.google.com/drive/1t1PkzGs3QDnPMQDw3lfieXzpLvdn8SlV?usp=sharing"> aqui </a> para acessar exemplos no Google Colab com LastN.
 
