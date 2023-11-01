@@ -15,7 +15,7 @@ Collection do Postman: Smart Lamp
 
 #### Criação do FIWARE Service
 
-2: Criação do FIWARE Service (Realizar uma única vez): API 4041
+2: Criação do FIWARE Service (Realizar esse procedimento uma única vez): API 4041
 
 #### Criação e registro do dispositivo
 
