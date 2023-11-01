@@ -89,12 +89,16 @@ Click <a href="https://colab.research.google.com/drive/1jFkEvZzD-a1BGNPg1hwDVGkK
 
 O IoT Agent MQTT é um componente da plataforma FIWARE que facilita a integração de dispositivos IoT baseados em MQTT (Message Queuing Telemetry Transport). Ele permite a comunicação bidirecional entre dispositivos MQTT e o Orion Context Broker, gerenciando a transformação de mensagens MQTT em atualizações de contexto compreensíveis. Ele também oferece recursos de descoberta automática, normalização de dados e autenticação de dispositivos MQTT.
 
+O Orion Context Broker apresenta a capacidade de se integrar facilmente a uma ampla variedade de IoT Agents, incluindo OPC UA, CoAP, e até mesmo formatos de dados como JSON, proporcionando uma conexão versátil e adaptável a diferentes protocolos e dispositivos na plataforma FIWARE.
+
 Click <a href="https://github.com/FIWARE/tutorials.IoT-Agent"> aqui </a> para acessar a documentação do IoT Agent.
 
 ## Componentes Complementares
 
 ### MongoDB
-O MongoDB é um sistema de banco de dados NoSQL usado na plataforma FIWARE para armazenar dados contextuais provenientes do Orion Context Broker e de outros componentes. Ele suporta documentos JSON flexíveis, possui recursos avançados para consultas e escalabilidade horizontal, tornando-o adequado para lidar com grandes volumes de dados na plataforma FIWARE.
+O MongoDB, um sistema de banco de dados NoSQL, desempenha um papel essencial na plataforma FIWARE ao armazenar dados contextuais provenientes do Orion Context Broker e de outros componentes. Com suporte a documentos flexíveis no formato JSON, o MongoDB oferece uma estrutura dinâmica e escalável para lidar com uma variedade de informações na plataforma FIWARE.
+
+Sua flexibilidade e recursos avançados para consultas não apenas simplificam o armazenamento de dados, mas também fornecem uma base robusta para lidar com grandes volumes de informações. Com a capacidade de escalar horizontalmente, o MongoDB é altamente adequado para atender às demandas crescentes de dados na plataforma FIWARE, garantindo eficiência e desempenho em meio a um ambiente em constante evolução.
 
 Click <a href="https://www.mongodb.com/pt-br/products/compass"> aqui </a> para instalar o Mongo Compass, uma interface gráfica de gerenciamento do MongoDB.
 
