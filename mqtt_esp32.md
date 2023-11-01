@@ -7,7 +7,7 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 #### Verificando a saúde dos componentes do FIWARE:
 
-#### IoT Agent
+### IoT Agent
 
 1.1: Apresenta a versão do IoT Agent MQTT
 
@@ -37,13 +37,13 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 9: Deleta o dispositivo 
 
-#### Orion Context Broker 
+### Orion Context Broker 
 
 1: Apresenta a versão e diversas informações sobre o Orion Context Broker
 
 2: Apresenta os dispositivos cadastrados no FIWARE Descomplicado
 
-#### STH-Comet
+### STH-Comet
 
 1: Apresenta a versão do STH-Comet
 
