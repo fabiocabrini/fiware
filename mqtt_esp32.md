@@ -13,14 +13,6 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 1.2: Verifica se já existe um FIWARE Service cadastrado
 
-#### Orion Context Broker 
-
-1: Apresenta a versão e diversas informações sobre o Orion Context Broker
-
-#### STH-Comet
-
-1: Apresenta a versão do STH-Comet
-
 #### Criação do FIWARE Service:
 
 2: Criação do FIWARE Service (Realizar esse procedimento uma única vez)
@@ -39,9 +31,25 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 8: Busca no Orion o status do LED presente no dispositivo
 
-#### Deletar o dispositivo:
+#### Listar e Deletar dispositivos:
 
-9: Deleta o dispositivo criado
+5: Lista os dispositivos presentes no FIWARE Descomplicado
+
+9: Deleta o dispositivo 
+
+#### Orion Context Broker 
+
+1: Apresenta a versão e diversas informações sobre o Orion Context Broker
+
+2: Apresenta os dispositivos cadastrados no FIWARE Descomplicado
+
+#### STH-Comet
+
+1: Apresenta a versão do STH-Comet
+
+2: Realiza a ativação do armazenamento temporal
+
+3: Apresenta os valores históricos de acordo com os parâmetros estabelecidos
 
 #### Diagrama Elétrico
 
