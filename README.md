@@ -177,7 +177,7 @@ docker compose down
 
 8666/TCP  - **STH-Comet**
 
-27017/TCP - **MongoDB** (Abra essa porta apenas em ambientes apartados da Internet!)
+27017/TCP - **MongoDB**  <span style="color:red">Abra essa porta apenas em ambientes apartados da Internet!</span>
 
 ## Recursos Avançados
 
