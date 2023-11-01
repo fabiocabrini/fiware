@@ -185,7 +185,7 @@ Aqui você vai encontrar um conjunto de collections desenvolvidas para serem imp
 
 **Observação:** Recurso disponível para atuar com a PoC - Smart Lamp.  Lembre que você pode adaptá-la as necessidades do seu projeto!
 
-Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman.
+Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE Descomplicado.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
 ## PoC - Smart Lamp
 
