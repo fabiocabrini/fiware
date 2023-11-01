@@ -3,9 +3,7 @@
 
 O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para funcionar conectado ao FIWARE Descomplicado de forma muito simples e intuitiva através do protocolo MQTT. 
 
-Collection do Postman: Smart Lamp
-
-#### Realizar os métodos:
+#### Você deve realizar os passos a seguir utilizando a collection do Postman:
 
 #### Health Check
 
