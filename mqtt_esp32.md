@@ -29,7 +29,7 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 8: Busca no Orion o status do LED presente no dispositivo
 
-#### Listar e Deletar dispositivos:
+#### Listar e deletar dispositivos:
 
 5: Lista os dispositivos presentes no FIWARE Descomplicado
 
