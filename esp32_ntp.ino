@@ -1,6 +1,6 @@
 #include <WiFi.h>
 
-#define NTP_SERVER     "IP_NTP_SERVER"
+#define NTP_SERVER     "ip_ntp_server"
 #define UTC_OFFSET     0
 #define UTC_OFFSET_DST 0
 
@@ -25,7 +25,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Connecting to ");
   Serial.print("WiFi ");
-  WiFi.begin("SSID", "PASSWORD", 6);
+  WiFi.begin("ssid", "password", 6);
   while (WiFi.status() != WL_CONNECTED) {
     delay(250);
   }
