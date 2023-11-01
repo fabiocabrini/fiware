@@ -51,11 +51,11 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 3: Apresenta os valores históricos de acordo com os parâmetros estabelecidos
 
-#### Diagrama Elétrico
+### Diagrama Elétrico
 
 ![](esp32_ldr.png)
 
-#### Código (IDE Arduino)
+### Código para o ESP32
 
 <a href="fiware_ngsi_mqtt_esp32.ino"> Código fonte para o ESP32 DEVKIT V1</a>
 
