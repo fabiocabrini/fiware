@@ -225,6 +225,6 @@ Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
 
-Fábio Henrique Cabrini é [Evangelista da FIWARE Foundation desde 2018](https://www.fiware.org/community/evangelists/meet-evangelists/)
+Fábio Henrique Cabrini é [evangelista da FIWARE Foundation desde 2018!](https://www.fiware.org/community/evangelists/meet-evangelists/)
 
 #### © Fábio Henrique Cabrini 2023, All rights reserved.
