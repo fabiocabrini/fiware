@@ -133,6 +133,14 @@ Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a li
 <br>
 Click <a href="FiwareDeploy.drawio"> aqui </a> para acessar o arquivo da arquitetura no formato drawio.
 
+## Requisitos Mínimos de Hardware para operação no Ubuntu Server LTS
+
+Núcleos de Processamento - **1vCPU**
+
+Memória RAM - **1GB** 
+
+Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação!).
+
 ## Requisitos de Software
 
 Docker e Docker-Compose
@@ -158,14 +166,6 @@ docker compose down
 **Observação:** O FIWARE Descomplicado utiliza volumes, portanto, os seus dados não serão perdidos ao desligá-lo!
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
-
-## Requisitos Mínimos de Hardware 
-
-Núcleos de Processamento - **1vCPU**
-
-Memória RAM - **1GB** 
-
-Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação!).
 
 ## Liberação de Portas no Firewall
 
