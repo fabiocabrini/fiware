@@ -8,6 +8,12 @@ Seja na nuvem ou em ambientes locais, a versatilidade e a facilidade de uso dest
 
 ### FIWARE
 
+O FIWARE é uma iniciativa inovadora que começou em 2011 como uma resposta às demandas crescentes da era da Internet das Coisas (IoT). Esta plataforma de código aberto foi projetada para fornecer um ambiente aberto e padronizado para o desenvolvimento de soluções inovadoras para cidades inteligentes, indústrias, agronegócio, e outros setores.
+
+Ao longo dos anos, o FIWARE evoluiu para se tornar um ecossistema próspero, fornecendo uma série de Ferramentas Genéricas (Generic Enablers) que ajudam no desenvolvimento de aplicações inovadoras baseadas em padrões abertos. Estas ferramentas incluem componentes-chave, como o Orion Context Broker para gerenciamento de dados contextuais, IoT Agents para integração de dispositivos, e o STH-Comet para armazenamento e recuperação de dados históricos.
+
+A comunidade FIWARE cresceu, atraindo desenvolvedores, empresas e organizações do mundo todo. Seu sucesso se baseia na promoção da interoperabilidade, permitindo a conectividade entre diferentes sistemas e fornecendo uma base sólida para soluções inteligentes e inovadoras. O FIWARE não apenas promove a colaboração, mas também é uma referência na adoção de padrões abertos para garantir a escalabilidade e a adaptabilidade das soluções, independente do setor ou da aplicação.
+
 O FIWARE não apenas oferece uma plataforma para IoT e Ambientes Inteligentes, mas vai além, promovendo uma abordagem avançada de Smart Data Models e interoperabilidade através do NGSI, sua interface de serviço de próxima geração.
 
 Baseado em Smart Data Models, o FIWARE não apenas reúne informações, mas as organiza e as disponibiliza de forma inteligente. Esses modelos inteligentes permitem uma compreensão e interação aprimoradas com os dados em tempo real, facilitando o desenvolvimento de soluções personalizadas.
