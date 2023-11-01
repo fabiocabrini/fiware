@@ -33,7 +33,7 @@ Collection do Postman: Smart Lamp
 
 #### Diagrama Elétrico
 
-![](esp_32_ldr.jpg)
+![](esp32_ldr.png)
 
 #### Código (IDE Arduino)
 
