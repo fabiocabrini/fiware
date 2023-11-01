@@ -149,13 +149,13 @@ docker compose down
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
 
-## Requisitos de Hardware 
+## Requisitos Mínimos de Hardware 
 
 Núcleos de Processamento - **1vCPU**
 
 Memória RAM - **1GB** 
 
-Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação).
+Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação!).
 
 ## Liberação de Portas no Firewall
 
@@ -167,12 +167,10 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 8666/TCP  - **API STH-Comet**
 
-27017/TCP - **MongoDB**
+27017/TCP - **MongoDB** (Abra essa porta apenas em ambientes apartados da Internet!)
 
 ## Recursos Avançados
 
-<a href="https://smartdatamodels.org/">FIWARE - Smart Data Models</a> - Modelos de Dados
-   
 <a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a>  - Manual Avançado do Orion Context Broker
    
 <a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relacionamento entre Entidades
@@ -183,7 +181,9 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 ## Collection do Postman (Material para experimentação)
 
-Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essas collection vai ajudá-lo a interagir com os componetes Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
+Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essa collection vai ajudá-lo a interagir com os componetes Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
+
+**Observação:** Recurso disponível para atuar com a PoC - Smart Lamp.  Lembre que você pode adaptá-la as necessidades do seu projeto!
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
