@@ -5,29 +5,39 @@ O código abaixo foi desenvolvido para ser aplicado no DOIT ESP32 DEVKIT V1 para
 
 #### Você deve realizar os passos a seguir utilizando a collection do Postman:
 
-#### Health Check
+#### Verificando a saúde dos componentes do FIWARE:
 
-1.1 Health Check: Verifica a versão do IoT Agent MQTT: API 4041
+#### IoT Agent
 
-1.2 Health Check: Verifica se já existe um FIWARE Service cadastrado: API 4041
+1.1: Apresenta a versão do IoT Agent MQTT
 
-#### Criação do FIWARE Service
+1.2: Verifica se já existe um FIWARE Service cadastrado
 
-2: Criação do FIWARE Service (Realizar esse procedimento uma única vez): API 4041
+#### Orion Context Broker 
 
-#### Criação e registro do dispositivo
+1: Apresenta a versão e diversas informações sobre o Orion Context Broker
 
-3: Provisionamento do dispositivo no IoT Agent MQTT: API 4041
+#### STH-Comet
 
-4: Registro do dispositivo virtual no Orion Context Broker: API 1026
+1: Apresenta a versão do STH-Comet
+
+#### Criação do FIWARE Service:
+
+2: Criação do FIWARE Service (Realizar esse procedimento uma única vez)
+
+#### Criação e registro do dispositivo:
+
+3: Provisionamento do dispositivo no IoT Agent MQTT
+
+4: Registro do dispositivo virtual no Orion Context Broker
 
 #### Operação do dispostivo:
 
-6: Envia comandos on/off para o dispositivo: API 1026
+6: Envia comandos on/off para o dispositivo
 
-7: Busca no Orion o valor de luminosidade enviado pelo dispositivo: API 1026
+7: Busca no Orion o valor de luminosidade enviado pelo dispositivo
 
-8: Busca no Orion o status do LED presente no dispositivo: API 1026
+8: Busca no Orion o status do LED presente no dispositivo
 
 #### Deletar o dispositivo:
 
