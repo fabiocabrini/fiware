@@ -45,7 +45,11 @@ Click <a href="https://fiware-tutorials.readthedocs.io/en/stable/getting-started
 
 ### CEF (Connecting Europe Facility)
 
-O CEF é uma iniciativa da União Europeia que oferece financiamento para o desenvolvimento de infraestruturas e serviços digitais, visando promover a interoperabilidade e a conectividade digital em toda a Europa. Ele apoia projetos que eliminam barreiras técnicas e promovem a interconexão e a interoperabilidade de sistemas e serviços digitais, impulsionando a transformação digital e a integração europeia.
+O CEF, uma iniciativa da União Europeia, desempenha um papel crucial na promoção da interoperabilidade e conectividade digital em toda a Europa. Por meio do fornecimento de financiamento para o desenvolvimento de infraestruturas e serviços digitais, o CEF apoia projetos destinados a superar barreiras técnicas e aprimorar a interconexão e a interoperabilidade de sistemas e serviços digitais.
+
+Essa iniciativa é um motor fundamental na jornada rumo à transformação digital e à integração europeia. Ao impulsionar o desenvolvimento de infraestruturas e serviços digitais, o CEF contribui para a facilitação do acesso, melhoria da qualidade e ampliação do alcance dos serviços digitais em toda a Europa.
+
+Com um foco central na eliminação de obstáculos e no estímulo à colaboração entre sistemas e serviços, o CEF desempenha um papel fundamental na concretização de uma Europa mais conectada e unificada, impulsionando o progresso digital e a coesão entre os países membros.
 
 Click <a href="https://ec.europa.eu/inea/en/connecting-europe-facility"> aqui </a> para acessar o site do CEF.
 
