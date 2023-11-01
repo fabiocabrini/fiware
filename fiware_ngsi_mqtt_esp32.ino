@@ -166,7 +166,7 @@ void reconnectMQTT() {
 
 void handleLuminosity() {
     const int potPin = 34;
-    char msgBuffer[6];  // Aumente o tamanho do buffer para 6 bytes para acomodar a string e o terminador nulo
+    char msgBuffer[6];  
     int sensorValue = analogRead(potPin);
     int luminosity = map(sensorValue, 0, 4095, 0, 100);
   
