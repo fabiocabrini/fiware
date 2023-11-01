@@ -169,13 +169,13 @@ docker compose down
 
 ## Liberação de Portas no Firewall
 
-1026/TCP  - **API Orion Context Broker**
+1026/TCP  - **Orion Context Broker**
 
 1883/TCP  - **Eclipse-Mosquito MQTT** 
 
-4041/TCP  - **API IoT-Agent MQTT**
+4041/TCP  - **IoT-Agent MQTT**
 
-8666/TCP  - **API STH-Comet**
+8666/TCP  - **STH-Comet**
 
 27017/TCP - **MongoDB** (Abra essa porta apenas em ambientes apartados da Internet!)
 
@@ -193,7 +193,9 @@ docker compose down
 
 Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essa collection vai ajudá-lo a interagir com os componetes Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
 
-**Observação:** Recurso disponível para atuar com a PoC - Smart Lamp.  Lembre que você pode adaptá-la as necessidades do seu projeto!
+**Observação:** Recurso disponível para a PoC - Smart Lamp.  
+
+*Lembre-se que você pode adaptá-la as necessidades do seu projeto!*
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE Descomplicado.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
