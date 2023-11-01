@@ -1,6 +1,10 @@
 # FIWARE Descomplicado
 
-Ferramenta para a instanciação dos principais GEs (Generic Enablers) destinados a operação como back-end para aplicações de IoT (Internet of Things) com persistência de dados. O FIWARE Descomplicado é destinado exclusivamente para atividades de pesquisa e desenvolvimento de PoCs (Proof of Concepts) que implementam soluções baseadas no processamento de informações de contexto que utilizam o NGSIv2 (Next Generation Service Interfaces).
+O FIWARE Descomplicado é uma ferramenta que torna simples o processo de configurar os principais GEs (Generic Enablers) oferecidos pela FIWARE Foundation. Desenvolvido como uma solução leve baseada no Docker, este recurso foi projetado para ser flexível, adaptando-se facilmente a várias plataformas computacionais, sistemas operacionais e provedores de serviços em nuvem (CSP).
+
+Com o objetivo de simplificar a experiência do usuário, esta ferramenta elimina a complexidade usual associada à instanciação dos GEs da FIWARE. Ao utilizar o FIWARE Descomplicado, usuários de diferentes perfis e níveis de habilidade podem facilmente acessar e aproveitar os benefícios dos serviços oferecidos pela FIWARE Foundation, independentemente do ambiente de computação em que estão trabalhando.
+
+Seja na nuvem ou em ambientes locais, a versatilidade e a facilidade de uso desta ferramenta proporcionam uma integração tranquila e acessível aos recursos disponibilizados pela FIWARE Foundation, abrindo caminho para a exploração e utilização desses serviços em variados cenários e contextos.
 
 ## Introdução
 
