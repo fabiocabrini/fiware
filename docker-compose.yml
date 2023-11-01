@@ -24,7 +24,7 @@ services:
        - mongo-db
      ports:
        - "1026:1026"
-     command: -dbhost mongo-db
+     command: -dbhost mongo-db -corsOrigin __ALL -corsMaxAge 600
 
 # Persistent Data
    fiware-sth-comet:
