@@ -203,13 +203,13 @@ Uma entidade "Smart Lamp" (ou "Lâmpada Inteligente") é um conceito dentro da p
 
 Uma "Smart Lamp" é caracterizada por uma série de propriedades e funcionalidades que podem incluir:
 
-Atributos de Estado: Pode conter informações sobre o estado atual da lâmpada, como ligada/desligada, brilho, cor ou qualquer outra propriedade controlável.
+**Atributos de Estado:** Pode conter informações sobre o estado atual da lâmpada, como ligada/desligada, brilho, cor ou qualquer outra propriedade controlável.
 
-Atributos de Sensoriamento: Além dos atributos de controle, a entidade "Smart Lamp" pode incluir sensores que monitoram informações ambientais, como luminosidade ambiente, temperatura ou consumo de energia.
+**Atributos de Sensoriamento:** Além dos atributos de controle, a entidade "Smart Lamp" pode incluir sensores que monitoram informações ambientais, como luminosidade ambiente, temperatura ou consumo de energia.
 
-Comandos: Define as ações que podem ser realizadas na lâmpada, como ligar, desligar, ajustar brilho, alterar cor, entre outros.
+**Comandos:** Define as ações que podem ser realizadas na lâmpada, como ligar, desligar, ajustar brilho, alterar cor, entre outros.
 
-Metadados e Identificadores: Informações de identificação e metadados, como ID da entidade, tipo de entidade, protocolos de comunicação e outras informações relevantes.
+**Metadados e Identificadores:** Informações de identificação e metadados, como ID da entidade, tipo de entidade, protocolos de comunicação e outras informações relevantes.
 
 A entidade "Smart Lamp" é projetada para ser parte de um ecossistema mais amplo, permitindo a integração com outras entidades e sistemas por meio de padrões abertos, promovendo a interoperabilidade e facilitando a construção de soluções inteligentes e conectadas para ambientes residenciais, urbanos ou industriais. Ela representa a base para o controle, monitoramento e interação de lâmpadas conectadas em uma infraestrutura de IoT baseada no FIWARE.
 
