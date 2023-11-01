@@ -197,7 +197,23 @@ Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE Descompli
 
 Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microntrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
 
-<a href="mqtt_esp32.md">ESP32: Publica no tópico "attrs" valores de luminosidade e subscreve no tópico "command" os comandos on/off via protocolo MQTT</a>
+### Smart Lamp
+
+Uma entidade "Smart Lamp" (ou "Lâmpada Inteligente") é um conceito dentro da plataforma FIWARE que representa uma lâmpada conectada, capaz de interagir com um ecossistema de IoT. Ela é modelada como uma entidade de dados que possui atributos e metadados associados que definem seu comportamento e características.
+
+Uma "Smart Lamp" é caracterizada por uma série de propriedades e funcionalidades que podem incluir:
+
+Atributos de Estado: Pode conter informações sobre o estado atual da lâmpada, como ligada/desligada, brilho, cor ou qualquer outra propriedade controlável.
+
+Atributos de Sensoriamento: Além dos atributos de controle, a entidade "Smart Lamp" pode incluir sensores que monitoram informações ambientais, como luminosidade ambiente, temperatura ou consumo de energia.
+
+Comandos: Define as ações que podem ser realizadas na lâmpada, como ligar, desligar, ajustar brilho, alterar cor, entre outros.
+
+Metadados e Identificadores: Informações de identificação e metadados, como ID da entidade, tipo de entidade, protocolos de comunicação e outras informações relevantes.
+
+A entidade "Smart Lamp" é projetada para ser parte de um ecossistema mais amplo, permitindo a integração com outras entidades e sistemas por meio de padrões abertos, promovendo a interoperabilidade e facilitando a construção de soluções inteligentes e conectadas para ambientes residenciais, urbanos ou industriais. Ela representa a base para o controle, monitoramento e interação de lâmpadas conectadas em uma infraestrutura de IoT baseada no FIWARE.
+
+<a href="mqtt_esp32.md"> Vamos criar juntos nossa Smart Lamp?</a>
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
 
