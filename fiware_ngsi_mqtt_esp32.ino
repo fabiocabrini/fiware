@@ -8,7 +8,6 @@
 //Autor Rev2: Fábio Henrique Cabrini
 //Rev3: 1-11-2023 Refinamento do código e ajustes para o funcionamento no FIWARE Descomplicado
 //Autor Rev3: Fábio Henrique Cabrini
-
 #include <WiFi.h>
 #include <PubSubClient.h>
 
@@ -83,7 +82,7 @@ void reconectWiFi() {
         Serial.print(".");
     }
     Serial.println();
-    Serial.print("Conectado com sucesso na rede ");
+    Serial.println("Conectado com sucesso na rede ");
     Serial.print(SSID);
     Serial.println("IP obtido: ");
     Serial.println(WiFi.localIP());
@@ -166,23 +165,10 @@ void reconnectMQTT() {
 
 void handleLuminosity() {
     const int potPin = 34;
-    char msgBuffer[6];  
     int sensorValue = analogRead(potPin);
     int luminosity = map(sensorValue, 0, 4095, 0, 100);
-  
-    // Certifique-se de que luminosity está no intervalo entre 0 e 100
-    if (luminosity < 0) {
-        luminosity = 0;
-    } else if (luminosity > 100) {
-        luminosity = 100;
-    }
-
-    memset(msgBuffer, 0, sizeof(msgBuffer));  // Limpa o buffer para garantir que não haja lixo residual
-    dtostrf(luminosity, 4, 2, msgBuffer);
+    String mensagem = String(luminosity);
     Serial.print("Valor da luminosidade: ");
-    Serial.println(msgBuffer);
-    MQTT.publish(TOPICO_PUBLISH_2, msgBuffer);
+    Serial.println(mensagem.c_str());
+    MQTT.publish(TOPICO_PUBLISH_2, mensagem.c_str());
 }
-
-
-
