@@ -227,4 +227,4 @@ Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.
 
 Fábio Henrique Cabrini é [evangelista da FIWARE Foundation desde 2018!](https://www.fiware.org/community/evangelists/meet-evangelists/)
 
-#### © Fábio Henrique Cabrini 2023, todos os direitos reservados.
+#### © Fábio Henrique Cabrini 2024, todos os direitos reservados.
