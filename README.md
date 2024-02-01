@@ -1,6 +1,6 @@
 # FIWARE Descomplicado
 
-O FIWARE Descomplicado é uma ferramenta que torna simples o processo de configurar os principais GEs (Generic Enablers) oferecidos pela FIWARE Foundation. Desenvolvido como uma solução leve baseada no Docker, este recurso foi projetado para ser flexível, adaptando-se facilmente a várias plataformas computacionais, sistemas operacionais e provedores de serviços em nuvem (CSP).
+O FIWARE Descomplicado é uma ferramenta que torna simples o processo de configurar os principais GEs (Generic Enablers) oferecidos pela FIWARE Foundation. Desenvolvido como uma solução leve baseada no Docker, este recurso foi projetado para ser flexível, adaptando-se facilmente a várias plataformas computacionais, sistemas operacionais e provedores de serviços em nuvem (CSP, do inglês Cloud Service Provider).
 
 Com o objetivo de simplificar a experiência do usuário, esta ferramenta elimina a complexidade usual associada à instanciação dos GEs da FIWARE. Ao utilizar o FIWARE Descomplicado, usuários de diferentes perfis e níveis de habilidade podem facilmente acessar e aproveitar os benefícios dos serviços oferecidos pela FIWARE Foundation, independentemente do ambiente de computação em que estão trabalhando.
 
@@ -8,7 +8,7 @@ Seja na nuvem ou em ambientes locais, a versatilidade e a facilidade de uso dest
 
 ### FIWARE
 
-O FIWARE é uma iniciativa inovadora que começou em 2011 como uma resposta às demandas crescentes da era da Internet das Coisas (IoT). Esta plataforma de código aberto foi projetada para fornecer um ambiente aberto e padronizado para o desenvolvimento de soluções inovadoras para cidades inteligentes, indústrias, agronegócio, e outros setores.
+O FIWARE é uma iniciativa inovadora que começou em 2011 como uma resposta às demandas crescentes da era da Internet das Coisas (IoT, do inglês Internet of Things). Esta plataforma de código aberto foi projetada para fornecer um ambiente aberto e padronizado para o desenvolvimento de soluções inovadoras para cidades inteligentes, indústrias, agronegócio, e outros setores.
 
 Ao longo dos anos, o FIWARE evoluiu para se tornar um ecossistema próspero, fornecendo uma série de Generic Enablers que ajudam no desenvolvimento de aplicações inovadoras baseadas em padrões abertos. Estas ferramentas incluem componentes-chave, como o Orion Context Broker para gerenciamento de dados contextuais, IoT Agents para integração de dispositivos, e o STH-Comet para armazenamento e recuperação de dados históricos.
 
@@ -43,9 +43,9 @@ Click <a href="https://github.com/smart-data-models"> aqui </a> para acessar o r
 Click <a href="https://oascities.org/minimal-interoperability-mechanisms/"> aqui </a> para acessar o repositório dos MIMs definidos pela OASC.
 
 
-### NGSI (Next Generation Service Interface)
+### NGSI
 
-O NGSI é um padrão de interface que define um modelo de dados consistente e uma API padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
+O NGSI é um padrão de interface que define um modelo de dados consistente e uma API (Application Programming Interface) padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
 
 Click <a href="https://fiware-tutorials.readthedocs.io/en/stable/getting-started/index.html"> aqui </a> para acessar a documentação do NGSI-v2.
 
@@ -110,7 +110,7 @@ Click <a href="https://www.mongodb.com/pt-br/products/compass"> aqui </a> para i
 
 ### Eclipse-Mosquitto
 
-O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE. Os dados são armazenados no tópico TEF (Telemetria e Monitoramento de Equipamentos).
+O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE. Os dados são armazenados no tópico TEF (Thing Event Function).
 
 Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
 
@@ -122,9 +122,9 @@ Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação 
 
 Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a lista completa dos componentes oferecidos pela FIWARE Foundation.
 
-**IoT (Internet of Things)** é responsável por acomodar os dispositivos de IoT que estabelecem comunicação com o back-end através dos protocolos de comunicação MQTT ou HTTP/NGSIv2.
+**IoT** é responsável por acomodar os dispositivos de IoT que estabelecem comunicação com o back-end através dos protocolos de comunicação MQTT ou HTTP/NGSIv2.
 
-**Observação:** Esta ferramenta **não inclui recursos de segurança**, pois é destinada a pesquisa e a construção de PoCs! Para que a sua aplicação atenda a requisitos de segurança exigidos pelo mercado é necessário acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP, além de protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTTs. Para alta disponibilidade é recomendado o uso de orquestradores como Docker Swarm ou Kubernetes.
+**Observação:** Esta ferramenta **não inclui recursos de segurança**, pois é destinada a pesquisa e a construção de PoCs! Para que a sua aplicação atenda a requisitos de segurança exigidos pelo mercado é necessário acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP, além de protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTTs. Para alta disponibilidade e escalabilidade é recomendado o uso de orquestradores como Docker Swarm ou Kubernetes.
 
 <br>
 <p align="center">
