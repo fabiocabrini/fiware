@@ -85,12 +85,6 @@ Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> pa
 
 Click <a href="https://documenter.getpostman.com/view/513743/RWEgqe8Q"> aqui </a> para acessar a documentação sobre queries do STH-Comet utilizando a API v2.
 
-### Exemplos de utilização (Google Colab)
-
-Click <a href="https://colab.research.google.com/drive/1t1PkzGs3QDnPMQDw3lfieXzpLvdn8SlV?usp=sharing"> aqui </a> para acessar exemplos no Google Colab com LastN.
-
-Click <a href="https://colab.research.google.com/drive/1jFkEvZzD-a1BGNPg1hwDVGkK_h5YfCSD?usp=sharing"> aqui </a> para acessar exemplos no Google Colab com intervalo de tempo.
-
 ### IoT-Agent MQTT
 
 O IoT Agent MQTT é um componente da plataforma FIWARE que facilita a integração de dispositivos IoT baseados em MQTT (Message Queuing Telemetry Transport). Ele permite a comunicação bidirecional entre dispositivos MQTT e o Orion Context Broker, gerenciando a transformação de mensagens MQTT em atualizações de contexto compreensíveis. Ele também oferece recursos de descoberta automática, normalização de dados e autenticação de dispositivos MQTT.
