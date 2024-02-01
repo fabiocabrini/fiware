@@ -171,6 +171,8 @@ docker compose down
 
 8666/TCP  - **STH-Comet**
 
+27017/TCP - **MongoDB** - Não é uma boa prática abrir essa porta em ambiente de nuvem!
+
 ## Recursos Avançados
 
 <a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a>  - Manual Avançado do Orion Context Broker
