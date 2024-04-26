@@ -217,14 +217,12 @@ A entidade "Smart Lamp" é projetada para ser parte de um ecossistema mais amplo
 
 Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
 
-**Tutorial elaborado pelo Prof. Me. Lucas Demetrius Augusto** 
+**Tutoriais no YouTube** 
 
 Click <a href="https://www.youtube.com/watch?v=8oHkAlXdWo8"> aqui </a> para acessar o vídeo no Youtube.
 
 ## Referências
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
-
-Fábio Henrique Cabrini é [evangelista da FIWARE Foundation desde 2018!](https://www.fiware.org/community/evangelists/meet-evangelists/)
 
 #### © Fábio Henrique Cabrini 2024, todos os direitos reservados.
