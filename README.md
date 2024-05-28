@@ -125,7 +125,7 @@ Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a li
 <img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_new_v4.png">
 </p>
 <br>
-Click <a href="FiwareDeploy_new_v3.drawio"> aqui </a> para acessar o arquivo da arquitetura no formato drawio.
+Click <a href="FiwareDeploy_new_v4.drawio"> aqui </a> para acessar o arquivo da arquitetura no formato drawio.
 
 ## Requisitos Mínimos de Hardware para operação no Ubuntu Server LTS
 
