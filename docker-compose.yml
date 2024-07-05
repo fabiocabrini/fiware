@@ -16,7 +16,7 @@ services:
 
 # Orion is the context broker
    orion:
-     image: fiware/orion:latest
+     image: fiware/orion:3.11.0
      restart: always
      hostname: orion
      container_name: fiware-orion
