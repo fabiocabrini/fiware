@@ -80,6 +80,7 @@ A API do STH-Comet pode ser consumida por programas desenvolvidos em Python que 
 <br>
 
 Click <a href="README_STH_Comet_dashboard.md"> aqui </a> para acessar a documentação do código quem implementa do daschboard dinâmico para o STH-Comet.
+
 Click <a href="api-sth.py"> aqui </a> para acessar o arquivo que implementa um dashboard dinâmico para o STH-Comet.
 
 
