@@ -230,4 +230,4 @@ Click <a href="https://www.youtube.com/watch?v=8oHkAlXdWo8"> aqui </a> para aces
 
 Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
 
-#### © Fábio Henrique Cabrini 2024, todos os direitos reservados.
+#### © Fábio Henrique Cabrini 2025, todos os direitos reservados.
