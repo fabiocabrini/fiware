@@ -34,11 +34,14 @@ services:
     container_name: fiware-orion
     hostname: orion
     depends_on:
-      - mongo-db-internal
+      - mongo-db-historical
     ports:
       - "1026:1026"
     command: >
-      -dbhost mongo-db-internal
+      -dbhost mongo-db-historical
+      -dbuser admin
+      -dbpwd admin123
+      -dbAuthDb admin
       -corsOrigin __ALL
       -corsMaxAge 600
 
