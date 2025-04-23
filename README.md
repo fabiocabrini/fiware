@@ -144,7 +144,9 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 Docker e Docker-Compose
 
-Click <a href=https://docs.docker.com/engine/install/ubuntu/> aqui </a> para ver as instruções de instalação do Docker e do Docker-Compose no Ubuntu Server LTS.
+sudo apt update
+sudo apt install docker.io
+sudo apt install docker-compose
 
 ## Vamos instalar o FIWARE Descomplicado? 
 
