@@ -145,7 +145,9 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 Docker e Docker-Compose
 
 sudo apt update
+
 sudo apt install docker.io
+
 sudo apt install docker-compose
 
 ## Vamos instalar o FIWARE Descomplicado? 
