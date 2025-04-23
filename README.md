@@ -142,7 +142,7 @@ Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos
 
 ## Requisitos de Software
 
-Docker e Docker-Compose
+### Docker e Docker-Compose
 
 sudo apt update
 
