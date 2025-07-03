@@ -174,7 +174,7 @@ docker compose down
 
 1026/TCP  - **Orion Context Broker**
 
-1883/TCP  - **Eclipse-Mosquito MQTT** 
+1883/TCP  - **Eclipse-Mosquitto MQTT** 
 
 4041/TCP  - **IoT-Agent MQTT**
 
@@ -194,17 +194,17 @@ docker compose down
 
 ## Collection do Postman (Material para experimentação)
 
-Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essa collection vai ajudá-lo a interagir com os componetes Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
+Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essa collection vai ajudá-lo a interagir com o Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
 
 **Observação:** Recurso disponível para a PoC - Smart Lamp.  
 
-*Lembre-se que você pode adaptá-la as necessidades do seu projeto!*
+*Lembre-se que você pode adaptá-la às necessidades do projeto!*
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE Descomplicado.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
 ## PoC - Smart Lamp
 
-Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microntrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
+Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microcontrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
 
 ### Smart Lamp
 
