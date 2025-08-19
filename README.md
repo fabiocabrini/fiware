@@ -170,12 +170,12 @@ sudo docker-compose down
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
 
+### Master Reset
 
-**Como Realizar o Master Reset no FIWARE Descomplicado**
-
-Observação: Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
+**Observação:** Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
 
 Após o encerramento com o comando docker-compose down, você pode apagar os volumes de ambos os bancos de dados MongoDB (Interno) e (Externo):
+
 
 sudo docker volume rm fiware_mongo-historical-data
 
@@ -241,7 +241,7 @@ Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32
 
 Click <a href="https://www.youtube.com/watch?v=8oHkAlXdWo8"> aqui </a> para acessar o vídeo no Youtube.
 
-**Link do projeto Smart Lamp no Wokwi
+**Link do projeto Smart Lamp no Wokwi**
 
 Click <a href="https://wokwi.com/projects/381403531345819649"> aqui </a> para acessar a simulação no Wokwi.
 
