@@ -160,15 +160,24 @@ git clone https://github.com/fabiocabrini/fiware
 
 cd fiware
 
-docker compose up -d
+sudo docker-compose up -d
 
 ### Encerramento
 
-docker compose down
+sudo docker-compose down
 
 **Observação:** O FIWARE Descomplicado utiliza volumes para que seus dados não sejam perdidos ao desligá-lo!
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
+
+**Como Realizar um Master Reset no FIWARE Descomplicado**
+
+Observação: Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
+
+Após o encerramento com o comando docker-compose down, você pode apagar os volumes de ambos os bancos de dados MongoDB (Interno) e (Externo):
+
+sudo docker volume rm fiware_mongo-historical-data
+sudo docker volume rm fiware_mongo-internal-data
 
 ## Liberação de Portas no Firewall
 
@@ -229,6 +238,11 @@ Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32
 **Tutoriais no YouTube** 
 
 Click <a href="https://www.youtube.com/watch?v=8oHkAlXdWo8"> aqui </a> para acessar o vídeo no Youtube.
+
+**Link do projeto Smart Lamp no Wokwi
+
+Click <a href="https://wokwi.com/projects/381403531345819649"> aqui </a> para acessar a simulação no Wokwi.
+
 
 ## Referências
 
