@@ -170,13 +170,15 @@ sudo docker-compose down
 
 **Volume:** /var/lib/docker/volumes/fiware_db-data/_data
 
-**Como Realizar um Master Reset no FIWARE Descomplicado**
+
+**Como Realizar o Master Reset no FIWARE Descomplicado**
 
 Observação: Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
 
 Após o encerramento com o comando docker-compose down, você pode apagar os volumes de ambos os bancos de dados MongoDB (Interno) e (Externo):
 
 sudo docker volume rm fiware_mongo-historical-data
+
 sudo docker volume rm fiware_mongo-internal-data
 
 ## Liberação de Portas no Firewall
