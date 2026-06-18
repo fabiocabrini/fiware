@@ -1,6 +1,40 @@
 # FIWARE Descomplicado
 
-O FIWARE Descomplicado é uma ferramenta que torna simples o processo de configurar os principais GEs (Generic Enablers) oferecidos pela FIWARE Foundation. Desenvolvido como uma solução leve baseada no Docker, este recurso foi projetado para ser flexível, adaptando-se facilmente a várias plataformas computacionais, sistemas operacionais e provedores de serviços em nuvem (CSP, do inglês Cloud Service Provider).
+> Uma stack FIWARE completa baseada em Docker — leve, portátil e pronta para rodar em qualquer nuvem, servidor ou estação local.
+
+O **FIWARE Descomplicado** é uma ferramenta que torna simples o processo de configurar os principais GEs (Generic Enablers) oferecidos pela FIWARE Foundation. Desenvolvido como uma solução leve baseada no Docker, este recurso foi projetado para ser flexível, adaptando-se facilmente a várias plataformas computacionais, sistemas operacionais e provedores de serviços em nuvem (CSP, do inglês *Cloud Service Provider*).
+
+## Índice
+
+- [Sobre o Projeto](#sobre-o-projeto)
+  - [FIWARE](#fiware)
+- [Smart Data Models e MIMs (Minimal Interoperability Mechanisms)](#smart-data-models-e-mims-minimal-interoperability-mechanisms)
+  - [NGSI](#ngsi)
+  - [CEF (Connecting Europe Facility)](#cef-connecting-europe-facility)
+- [Principais GEs (Generic Enablers)](#principais-ges-generic-enablers)
+  - [Orion Context Broker](#orion-context-broker)
+  - [STH-Comet](#sth-comet)
+  - [IoT-Agent MQTT](#iot-agent-mqtt)
+- [Componentes Complementares](#componentes-complementares)
+  - [MongoDB](#mongodb)
+  - [Eclipse-Mosquitto](#eclipse-mosquitto)
+- [Arquitetura Básica para Projetos de IoT](#arquitetura-básica-para-projetos-de-iot)
+- [Requisitos Mínimos de Hardware](#requisitos-mínimos-de-hardware-para-operação-no-ubuntu-server-lts)
+- [Requisitos de Software](#requisitos-de-software)
+  - [Docker e Docker-Compose](#docker-e-docker-compose)
+- [Vamos instalar o FIWARE Descomplicado?](#vamos-instalar-o-fiware-descomplicado)
+  - [Instalação](#instalação)
+  - [Inicialização](#inicialização)
+  - [Encerramento](#encerramento)
+  - [Master Reset](#master-reset)
+- [Liberação de Portas no Firewall](#liberação-de-portas-no-firewall)
+- [Recursos Avançados](#recursos-avançados)
+- [Collection do Postman](#collection-do-postman-material-para-experimentação)
+- [PoC - Smart Lamp](#poc---smart-lamp)
+  - [Smart Lamp](#smart-lamp)
+- [Referências](#referências)
+
+## Sobre o Projeto
 
 Com o objetivo de simplificar a experiência do usuário, esta ferramenta elimina a complexidade usual associada à instanciação dos GEs da FIWARE. Ao utilizar o FIWARE Descomplicado, usuários de diferentes perfis e níveis de habilidade podem facilmente acessar e aproveitar os benefícios dos serviços oferecidos pela FIWARE Foundation, independentemente do ambiente de computação em que estão trabalhando.
 
@@ -8,7 +42,7 @@ Seja na nuvem ou em ambientes locais, a versatilidade e a facilidade de uso dest
 
 ### FIWARE
 
-O FIWARE é uma iniciativa inovadora que começou em 2011 como uma resposta às demandas crescentes da era da Internet das Coisas (IoT, do inglês Internet of Things). Esta plataforma de código aberto foi projetada para fornecer um ambiente aberto e padronizado para o desenvolvimento de soluções inovadoras para cidades inteligentes, indústrias, agronegócio, e outros setores.
+O FIWARE é uma iniciativa inovadora que começou em 2011 como uma resposta às demandas crescentes da era da Internet das Coisas (IoT, do inglês *Internet of Things*). Esta plataforma de código aberto foi projetada para fornecer um ambiente aberto e padronizado para o desenvolvimento de soluções inovadoras para cidades inteligentes, indústrias, agronegócio, e outros setores.
 
 Ao longo dos anos, o FIWARE evoluiu para se tornar um ecossistema próspero, fornecendo uma série de Generic Enablers que ajudam no desenvolvimento de aplicações inovadoras baseadas em padrões abertos. Estas ferramentas incluem componentes-chave, como o Orion Context Broker para gerenciamento de dados contextuais, IoT Agents para integração de dispositivos, e o STH-Comet para armazenamento e recuperação de dados históricos.
 
@@ -18,11 +52,10 @@ O FIWARE não apenas oferece uma plataforma para IoT e Ambientes Inteligentes, m
 
 Baseado em Smart Data Models, o FIWARE não apenas reúne informações, mas as organiza e as disponibiliza de forma inteligente. Esses modelos inteligentes permitem uma compreensão e interação aprimoradas com os dados em tempo real, facilitando o desenvolvimento de soluções personalizadas.
 
-O NGSI (Next Generation Service Interface) desempenha um papel crucial ao estabelecer a interoperabilidade. Ele permite a comunicação e a troca de dados entre diferentes dispositivos e sistemas, independentemente de sua origem ou localização. Isso significa que as soluções criadas com o FIWARE podem se conectar facilmente a uma variedade de fontes de dados, tornando-o um catalisador para a inovação ao permitir a criação de soluções integradas e interconectadas para um mundo mais inteligente e conectado. 
+O NGSI (*Next Generation Service Interface*) desempenha um papel crucial ao estabelecer a interoperabilidade. Ele permite a comunicação e a troca de dados entre diferentes dispositivos e sistemas, independentemente de sua origem ou localização. Isso significa que as soluções criadas com o FIWARE podem se conectar facilmente a uma variedade de fontes de dados, tornando-o um catalisador para a inovação ao permitir a criação de soluções integradas e interconectadas para um mundo mais inteligente e conectado.
 
-Click <a href="https://www.fiware.org/"> aqui </a> para acessar o site do FIWARE.
-
-Click <a href="https://fiwaretourguide.readthedocs.io/en/latest/"> aqui </a> para acessar o tour guide do FIWARE.
+- [Site oficial do FIWARE](https://www.fiware.org/)
+- [Tour Guide do FIWARE](https://fiwaretourguide.readthedocs.io/en/latest/)
 
 ## Smart Data Models e MIMs (Minimal Interoperability Mechanisms)
 
@@ -38,16 +71,14 @@ Os MIMs, desenvolvidos pelo Conselho de Tecnologia da OASC e governados pelo Con
 
 Esses mecanismos fornecem a base técnica para aquisição e implementação de plataformas de dados urbanos e soluções abrangentes em cidades e comunidades em todo o mundo. Por meio dos MIMs, a OASC capacita a implementação de tecnologias interoperáveis, facilitando a inovação e o desenvolvimento de soluções inteligentes adaptadas às necessidades específicas de cada localidade.
 
-Click <a href="https://github.com/smart-data-models"> aqui </a> para acessar o repositório com os Smart Data Models usados pelo FIWARE.
-
-Click <a href="https://oascities.org/minimal-interoperability-mechanisms/"> aqui </a> para acessar o repositório dos MIMs definidos pela OASC.
-
+- [Repositório dos Smart Data Models](https://github.com/smart-data-models)
+- [Repositório dos MIMs definidos pela OASC](https://oascities.org/minimal-interoperability-mechanisms/)
 
 ### NGSI
 
-O NGSI é um padrão de interface que define um modelo de dados consistente e uma API (Application Programming Interface) padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
+O NGSI é um padrão de interface que define um modelo de dados consistente e uma API (*Application Programming Interface*) padronizada para a troca de informações contextuais na plataforma FIWARE e outras aplicações. Ele utiliza o formato JSON e fornece métodos para criar, atualizar, recuperar e excluir dados contextuais, facilitando a interoperabilidade e a comunicação entre diferentes componentes e sistemas.
 
-Click <a href="https://fiware-tutorials.readthedocs.io/en/stable/getting-started/index.html"> aqui </a> para acessar a documentação do NGSI-v2.
+- [Documentação do NGSI-v2](https://fiware-tutorials.readthedocs.io/en/stable/getting-started/index.html)
 
 ### CEF (Connecting Europe Facility)
 
@@ -57,15 +88,15 @@ Essa iniciativa é um motor fundamental na jornada rumo à transformação digit
 
 Com um foco central na eliminação de obstáculos e no estímulo à colaboração entre sistemas e serviços, o CEF desempenha um papel fundamental na concretização de uma Europa mais conectada e unificada, impulsionando o progresso digital e a coesão entre os países membros.
 
-Click <a href="https://ec.europa.eu/inea/en/connecting-europe-facility"> aqui </a> para acessar o site do CEF.
+- [Site do CEF](https://ec.europa.eu/inea/en/connecting-europe-facility)
 
 ## Principais GEs (Generic Enablers)
 
-### Orion Context Broker 
+### Orion Context Broker
 
 O Orion Context Broker é um componente da plataforma FIWARE que gerencia dados contextuais em tempo de execução. Ele armazena informações sobre objetos e entidades, permitindo que os desenvolvedores capturem, consultem e compartilhem esses dados. O Context Broker utiliza um modelo de publicação/assinatura para fornecer atualizações em tempo real sobre mudanças no contexto das entidades. Ele oferece uma API RESTful para interação e suporta recursos como geolocalização, histórico de dados e notificações baseadas em condições específicas.
 
-Click <a href="https://fiware-orion.readthedocs.io/en/3.10.1/index.html"> aqui </a> para acessar a documentação do Orion Context Broker.
+- [Documentação do Orion Context Broker](https://fiware-orion.readthedocs.io/en/3.10.1/index.html)
 
 ### STH-Comet
 
@@ -73,149 +104,151 @@ O STH-Comet é um componente da plataforma FIWARE que lida com o armazenamento h
 
 A API do STH-Comet pode ser consumida por programas desenvolvidos em Python que podem gerar gráficos históricos através da biblioteca Matplotlib.
 
-<br>
 <p align="center">
-<img src="https://github.com/fabiocabrini/fiware/blob/main/sth-comet-m.jpg">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/sth-comet-m.jpg" alt="Exemplo de dashboard dinâmico do STH-Comet">
 </p>
-<br>
 
-Click <a href="README_STH_Comet_dashboard.md"> aqui </a> para acessar a documentação do código que implementa o dashboard dinâmico para o STH-Comet.
+- [Documentação do código do dashboard dinâmico para STH-Comet](README_STH_Comet_dashboard.md)
+- [Código-fonte do dashboard (api-sth.py)](api-sth.py)
 
-Click <a href="api-sth.py"> aqui </a> para acessar o arquivo que implementa um dashboard dinâmico para o STH-Comet.
+#### Documentação
 
-
-### Documentação
-
-Click <a href="https://fiware-sth-comet.readthedocs.io/en/latest/"> aqui </a> para acessar a documentação do STH-Comet.
-
-Click <a href="https://documenter.getpostman.com/view/513743/RWEgqe8Q"> aqui </a> para acessar a documentação sobre queries do STH-Comet utilizando a API v2.
+- [Documentação oficial do STH-Comet](https://fiware-sth-comet.readthedocs.io/en/latest/)
+- [Queries do STH-Comet via API v2 (Postman)](https://documenter.getpostman.com/view/513743/RWEgqe8Q)
 
 ### IoT-Agent MQTT
 
-O IoT Agent MQTT é um componente da plataforma FIWARE que facilita a integração de dispositivos IoT baseados em MQTT (Message Queuing Telemetry Transport). Ele permite a comunicação bidirecional entre dispositivos MQTT e o Orion Context Broker, gerenciando a transformação de mensagens MQTT em atualizações de contexto compreensíveis. Ele também oferece recursos de descoberta automática, normalização de dados e autenticação de dispositivos MQTT.
+O IoT Agent MQTT é um componente da plataforma FIWARE que facilita a integração de dispositivos IoT baseados em MQTT (*Message Queuing Telemetry Transport*). Ele permite a comunicação bidirecional entre dispositivos MQTT e o Orion Context Broker, gerenciando a transformação de mensagens MQTT em atualizações de contexto compreensíveis. Ele também oferece recursos de descoberta automática, normalização de dados e autenticação de dispositivos MQTT.
 
 O Orion Context Broker apresenta a capacidade de se integrar facilmente a uma ampla variedade de IoT Agents, incluindo OPC UA, CoAP, e até mesmo formatos de dados como JSON, proporcionando uma conexão versátil e adaptável a diferentes protocolos e dispositivos na plataforma FIWARE.
 
-Click <a href="https://github.com/FIWARE/tutorials.IoT-Agent"> aqui </a> para acessar a documentação do IoT Agent.
+- [Documentação do IoT Agent](https://github.com/FIWARE/tutorials.IoT-Agent)
 
 ## Componentes Complementares
 
 ### MongoDB
+
 O MongoDB, um sistema de banco de dados NoSQL, desempenha um papel essencial na plataforma FIWARE ao armazenar dados contextuais provenientes do Orion Context Broker e de outros componentes. Com suporte a documentos flexíveis no formato JSON, o MongoDB oferece uma estrutura dinâmica e escalável para lidar com uma variedade de informações na plataforma FIWARE.
 
 Sua flexibilidade e recursos avançados para consultas não apenas simplificam o armazenamento de dados, mas também fornecem uma base robusta para lidar com grandes volumes de informações. Com a capacidade de escalar horizontalmente, o MongoDB é altamente adequado para atender às demandas crescentes de dados na plataforma FIWARE, garantindo eficiência e desempenho em meio a um ambiente em constante evolução.
 
-Click <a href="https://www.mongodb.com/pt-br/products/compass"> aqui </a> para instalar o Mongo Compass, uma interface gráfica de gerenciamento do MongoDB.
+- [Mongo Compass — interface gráfica de gerenciamento do MongoDB](https://www.mongodb.com/pt-br/products/compass)
 
 ### Eclipse-Mosquitto
 
-O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE. Os dados são armazenados no tópico TEF (Thing Event Function).
+O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE. Os dados são armazenados no tópico TEF (*Thing Event Function*).
 
-Click <a href="https://mosquitto.org/"> aqui </a> para acessar a documentação do Eclipse-Mosquitto MQTT Broker.
+- [Documentação do Eclipse-Mosquitto MQTT Broker](https://mosquitto.org/)
 
 ## Arquitetura Básica para Projetos de IoT
 
 **Aplicação** atua como a face visível da aplicação, responsável pelo front-end e pelas ferramentas que interagem com dispositivos de IoT e os consumidores/provedores de contexto. Além disso, ela é a casa de inovações tecnológicas como algoritmos de machine learning, inteligência artificial, análises avançadas, dashboards e aplicativos móveis.
 
-**Back-end** é o núcleo operacional da plataforma, onde residem elementos vitais como o Orion Context Broker, STH-Comet, IoT Agent MQTT, e o banco de dados NoSQL MongoDB. Esses componentes desempenham um papel fundamental no armazenamento e gerenciamento de entidades, registros, subscrições e dados históricos (time series). Para facilitar a comunicação, também encontramos o Eclipse-Mosquitto, um popular broker MQTT.  Além desses componentes-chave, a Camada de Back-end é um hub para a integração de outros GEs oferecidos pela FIWARE Foundation e ferramentas de terceiros. Esta camada não só proporciona a infraestrutura robusta para suportar a troca de informações, mas também serve como a espinha dorsal para a construção de soluções complexas e escaláveis.
+**Back-end** é o núcleo operacional da plataforma, onde residem elementos vitais como o Orion Context Broker, STH-Comet, IoT Agent MQTT, e o banco de dados NoSQL MongoDB. Esses componentes desempenham um papel fundamental no armazenamento e gerenciamento de entidades, registros, subscrições e dados históricos (*time series*). Para facilitar a comunicação, também encontramos o Eclipse-Mosquitto, um popular broker MQTT. Além desses componentes-chave, a camada de back-end é um hub para a integração de outros GEs oferecidos pela FIWARE Foundation e ferramentas de terceiros. Esta camada não só proporciona a infraestrutura robusta para suportar a troca de informações, mas também serve como a espinha dorsal para a construção de soluções complexas e escaláveis.
 
-Click <a href=https://www.fiware.org/catalogue/> aqui </a> para ver acessar a lista completa dos componentes oferecidos pela FIWARE Foundation.
+- [Lista completa dos componentes oferecidos pela FIWARE Foundation](https://www.fiware.org/catalogue/)
 
 **IoT** é responsável por acomodar os dispositivos de IoT que estabelecem comunicação com o back-end através dos protocolos de comunicação MQTT ou HTTP/NGSIv2.
 
-**Observação:** Esta ferramenta **não inclui recursos de segurança**, pois é destinada a pesquisa e a construção de PoCs! Para que a sua aplicação atenda a requisitos de segurança exigidos pelo mercado é necessário acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP, além de protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTTs. Para alta disponibilidade e escalabilidade é recomendado o uso de orquestradores como Docker Swarm ou Kubernetes.
+> [!IMPORTANT]
+> Esta ferramenta **não inclui recursos de segurança**, pois é destinada a pesquisa e a construção de PoCs! Para que a sua aplicação atenda a requisitos de segurança exigidos pelo mercado é necessário acrescentar os GEs indicados pela FIWARE (Keyrock, Wilma PEP Proxy e AuthZForce PDP/PAP), habilitar os recursos de segurança do sistema operacional hospedeiro/CSP, além de protocolos com suporte a criptografia, ao exemplo do HTTPs e MQTTs. Para alta disponibilidade e escalabilidade é recomendado o uso de orquestradores como Docker Swarm ou Kubernetes.
 
-<br>
 <p align="center">
-<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_new_v5.png">
+<img src="https://github.com/fabiocabrini/fiware/blob/main/FiwareDeploy_new_v5.png" alt="Diagrama da arquitetura do FIWARE Descomplicado">
 </p>
-<br>
-Click <a href="FiwareDeploy_new_v5.drawio"> aqui </a> para acessar o arquivo da arquitetura no formato drawio.
+
+- [Arquivo da arquitetura no formato drawio](FiwareDeploy_new_v5.drawio)
 
 ## Requisitos Mínimos de Hardware para operação no Ubuntu Server LTS
 
-Núcleos de Processamento - **1vCPU**
-
-Memória RAM - **1GB** 
-
-Armazenamento Secundário Mínimo - **20GB HD e/ou SSD** (Depende dos requisitos da aplicação!).
+| Recurso | Mínimo recomendado |
+|---|---|
+| Núcleos de processamento | 1 vCPU |
+| Memória RAM | 1 GB |
+| Armazenamento secundário | 20 GB (HD e/ou SSD) — depende dos requisitos da aplicação |
 
 ## Requisitos de Software
 
 ### Docker e Docker-Compose
 
+```bash
 sudo apt update
-
 sudo apt install docker.io
-
 sudo apt install docker-compose
+```
 
-## Vamos instalar o FIWARE Descomplicado? 
+## Vamos instalar o FIWARE Descomplicado?
 
 ### Instalação
 
+```bash
 git clone https://github.com/fabiocabrini/fiware
+```
 
 ### Inicialização
 
+```bash
 cd fiware
-
 sudo docker-compose up -d
+```
 
 ### Encerramento
 
+```bash
 sudo docker-compose down
+```
 
-**Observação:** O FIWARE Descomplicado utiliza volumes para que seus dados não sejam perdidos ao desligá-lo!
-
-**Volume:** /var/lib/docker/volumes/fiware_db-data/_data
+> [!NOTE]
+> O FIWARE Descomplicado utiliza volumes para que seus dados não sejam perdidos ao desligá-lo!
+>
+> **Volume:** `/var/lib/docker/volumes/fiware_db-data/_data`
 
 ### Master Reset
 
-**Observação:** Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
+> [!WARNING]
+> Você apagará todas as entidades, subscriptions e registries em ambos os bancos de dados!
 
-Após o encerramento com o comando docker-compose down, você pode apagar os volumes de ambos os bancos de dados MongoDB (Interno) e (Externo):
+Após o encerramento com o comando `docker-compose down`, você pode apagar os volumes de ambos os bancos de dados MongoDB (interno e externo):
 
-
+```bash
 sudo docker volume rm fiware_mongo-historical-data
-
 sudo docker volume rm fiware_mongo-internal-data
+```
 
 ## Liberação de Portas no Firewall
 
-1026/TCP  - **Orion Context Broker**
+| Porta | Protocolo | Serviço |
+|---|---|---|
+| 1026 | TCP | Orion Context Broker |
+| 1883 | TCP | Eclipse-Mosquitto MQTT |
+| 4041 | TCP | IoT-Agent MQTT |
+| 8666 | TCP | STH-Comet |
+| 27017 | TCP | MongoDB |
 
-1883/TCP  - **Eclipse-Mosquitto MQTT** 
-
-4041/TCP  - **IoT-Agent MQTT**
-
-8666/TCP  - **STH-Comet**
-
-27017/TCP - **MongoDB** - Não é uma boa prática abrir essa porta em ambiente de nuvem!
+> [!WARNING]
+> Abrir a porta 27017 (MongoDB) não é uma boa prática em ambiente de nuvem!
 
 ## Recursos Avançados
 
-<a href="https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html">FIWARE - Step by Step</a>  - Manual Avançado do Orion Context Broker
-   
-<a href="https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh">FIWARE - Entity Relationships - Postman Collections</a> - Relacionamento entre Entidades
-
-<a href="http://telefonicaid.github.io/fiware-orion/archive/api/v2/">FIWARE - NGSI v2 Subscriptions - Postman Collections</a> - Subscrições Condicionadas
-
-<a href="https://fiware-orion.readthedocs.io/en/3.10.1/orion-api.html#geospatial-properties-of-entities">FIWARE - NGSI v2 API Orion 3.10.1 </a> - Novo
+- [FIWARE - Step by Step](https://fiware-tutorials.readthedocs.io/en/1.0.0/index.html) — Manual avançado do Orion Context Broker
+- [FIWARE - Entity Relationships - Postman Collections](https://documenter.getpostman.com/view/513743/fiware-entity-relationships/RVu8gSCh) — Relacionamento entre entidades
+- [FIWARE - NGSI v2 Subscriptions - Postman Collections](http://telefonicaid.github.io/fiware-orion/archive/api/v2/) — Subscrições condicionadas
+- [FIWARE - NGSI v2 API Orion 3.10.1](https://fiware-orion.readthedocs.io/en/3.10.1/orion-api.html#geospatial-properties-of-entities) — Novo
 
 ## Collection do Postman (Material para experimentação)
 
-Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman.  Essa collection vai ajudá-lo a interagir com o Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
+Aqui você vai encontrar um conjunto de collections desenvolvidas para serem importadas pela ferramenta Postman. Essa collection vai ajudá-lo a interagir com o Orion Context Broker, IoT Agent MQTT e STH-Comet, presentes na arquitetura do FIWARE Descomplicado.
 
-**Observação:** Recurso disponível para a PoC - Smart Lamp.  
-
-*Lembre-se que você pode adaptá-la às necessidades do projeto!*
+> [!NOTE]
+> Recurso disponível para a PoC - Smart Lamp.
+>
+> *Lembre-se que você pode adaptá-la às necessidades do projeto!*
 
 Click <a href="https://github.com/fabiocabrini/fiware/blob/main/FIWARE Descomplicado.postman_collection.json"> aqui </a> para acessar a collection do Postman.
 
 ## PoC - Smart Lamp
 
-Esta documentação vai ajudá-lo a construir uma PoC (Proof of Concept) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microcontrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
+Esta documentação vai ajudá-lo a construir uma PoC (*Proof of Concept*) baseada no exemplo do Smart Lamp, utilizando a plataforma de prototipação ESP32 DEVKIT V1, microcontrolador de 32 bits da Espressif, equipado com as tecnologias de comunicação wireless Wi-Fi IEEE802.11n e Bluetooth IEEE802.15.
 
 ### Smart Lamp
 
@@ -223,31 +256,22 @@ Uma entidade "Smart Lamp" (ou "Lâmpada Inteligente") é um conceito dentro da p
 
 Uma "Smart Lamp" é caracterizada por uma série de propriedades e funcionalidades que podem incluir:
 
-**Atributos de Estado:** Pode conter informações sobre o estado atual da lâmpada, como ligada/desligada, brilho, cor ou qualquer outra propriedade controlável.
-
-**Atributos de Sensoriamento:** Além dos atributos de controle, a entidade "Smart Lamp" pode incluir sensores que monitoram informações ambientais, como luminosidade ambiente, temperatura ou consumo de energia.
-
-**Comandos:** Define as ações que podem ser realizadas na lâmpada, como ligar, desligar, ajustar brilho, alterar cor, entre outros.
-
-**Metadados e Identificadores:** Informações de identificação e metadados, como ID da entidade, tipo de entidade, protocolos de comunicação e outras informações relevantes.
+- **Atributos de Estado:** Pode conter informações sobre o estado atual da lâmpada, como ligada/desligada, brilho, cor ou qualquer outra propriedade controlável.
+- **Atributos de Sensoriamento:** Além dos atributos de controle, a entidade "Smart Lamp" pode incluir sensores que monitoram informações ambientais, como luminosidade ambiente, temperatura ou consumo de energia.
+- **Comandos:** Define as ações que podem ser realizadas na lâmpada, como ligar, desligar, ajustar brilho, alterar cor, entre outros.
+- **Metadados e Identificadores:** Informações de identificação e metadados, como ID da entidade, tipo de entidade, protocolos de comunicação e outras informações relevantes.
 
 A entidade "Smart Lamp" é projetada para ser parte de um ecossistema mais amplo, permitindo a integração com outras entidades e sistemas por meio de padrões abertos, promovendo a interoperabilidade e facilitando a construção de soluções inteligentes e conectadas para ambientes residenciais, urbanos ou industriais. Ela representa a base para o controle, monitoramento e interação de lâmpadas conectadas em uma infraestrutura de IoT baseada no FIWARE.
 
-<a href="mqtt_esp32.md"> Vamos criar juntos nossa Smart Lamp?</a>
-
-Click <a href="https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"> aqui </a> para acessar o data sheet do ESP32.
-
-**Tutoriais no YouTube** 
-
-Click <a href="https://www.youtube.com/watch?v=8oHkAlXdWo8"> aqui </a> para acessar o vídeo no Youtube.
-
-**Link do projeto Smart Lamp no Wokwi**
-
-Click <a href="https://wokwi.com/projects/381403531345819649"> aqui </a> para acessar a simulação no Wokwi.
-
+- [Vamos criar juntos nossa Smart Lamp?](mqtt_esp32.md)
+- [Datasheet do ESP32](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+- [Tutorial no YouTube](https://www.youtube.com/watch?v=8oHkAlXdWo8)
+- [Simulação do projeto no Wokwi](https://wokwi.com/projects/381403531345819649)
 
 ## Referências
 
-Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
+Esse material foi simplificado e adaptado da [Fiware Foundation](https://github.com/FIWARE/tutorials.IoT-over-MQTT).
 
-#### © Fábio Henrique Cabrini 2025, todos os direitos reservados.
+---
+
+#### © Fábio Henrique Cabrini 2026, todos os direitos reservados.
